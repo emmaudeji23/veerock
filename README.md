@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Veerock COnstruction COmpany
+
+This is the Veerock company web application. The app built to automate blogging. The app automatically automates the company's social media handles regurlarly.
+
+
+=======
 
 ## Getting Started
 
