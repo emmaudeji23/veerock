@@ -1,73 +1,41 @@
-import Image from 'next/image';
-import Link from 'next/link'
-import { FiBell, FiSearch, FiShoppingCart, FiUser, FiX } from 'react-icons/fi';
 import DesktopNav from './DesktopNav';
-import SearchBar from './SearchBar';
 import MobileNav from './MobileNav';
-import { useGlobalState } from '@/context/GlobalStateContext';
-import ModalSearchBox from '../Modal/ModalSearchBox';
-import ModalSearchBoxLg from '../Modal/ModalSearchBoxLg';
+import Link from 'next/link';
 
-
-
+import {FaFacebookF, FaInstagram, FaRegEnvelope, FaLinkedinIn, FaPhone, FaMapMarkerAlt, } from 'react-icons/fa'
 
 const Navigation = ({themeBtn}) => {
-  const{isModalOpen, closeModal, openModal, modalType} = useGlobalState()
   return (
     <>
-     <nav className="section-padding py-4 ">
-        <div className="flex w-full items-center justify-between space-x-4">
-
-            <div className=" flex space-x-3  flex-shrink-0 selection:items-center">
-              <div className=''> 
-                <Image
-                    width={90} height={45}
-                    src="/logo.png"
-                    alt="Logo"
-                  />
-                </div>
-                <h4 className='font-medium text-xl pt-5'>
-                Vendor
-              </h4>
-        
+        <section className='w-full bg-blue-900 text-white md:block hidden'>
+            <div className="section-padding text-sm w-full flex  items-center justify-between space-x-4">
+               <div className="">
+                  <div className=" flex gap-4 items-center ">
+                      <p className='flex items-center gap-2'>
+                        <FaMapMarkerAlt/> #5 MCC road, Ikenegbu Layout Owerri
+                      </p>
+                      <a href="mailto:veerock@gmail.com" className='flex gap-2 items-center'>
+                        <FaRegEnvelope/> veerock@gmail.com
+                      </a>
+                  </div>
+               </div>
+               <div className="">
+                  <div className='w-full flex '>
+                      <Link href="https://facebook.com/veerock" className='flex bg-blue-700 items-center px-4'> <FaFacebookF/></Link>
+                      <Link href="https://instagram.com/veerock" className='flex bg-red-600 items-center px-4'> <FaInstagram/></Link>
+                      <Link href="https://linkedin.com/in/emmanuel-udeji" className='flex bg-blue-800 items-center px-4'> <FaLinkedinIn/></Link>
+                      <a href="tel:+2348032787601" className='flex gap-2 py-2 px-4 bg-yellow-500 text-black ' > <FaPhone/> +2348032787601</a>
+                  </div>
+               </div>
             </div>
+        </section>
 
-            <div className='w-full hidden sm:block'>
-              <SearchBar onFocus={()=>openModal('searchboxLg')}/>
-              <ModalSearchBoxLg isOpen={isModalOpen} onClose={closeModal} modalType={modalType}></ModalSearchBoxLg>
-            </div>
-            
-           
-            <div className=" justify-end">
-              <ul className="flex justify-end items-center space-x-4 text-2xl">
-              
-                <li className="sm:hidden">
-                  {!isModalOpen ? <FiSearch width={20} onClick={()=>openModal('searchboxSm')}/> : 
-                  <FiX width={20} onClick={closeModal}/> }
-                </li>
-                <ModalSearchBox isOpen={isModalOpen} onClose={closeModal} modalType={modalType}></ModalSearchBox>
-
-                {themeBtn}
-                <li>
-                  <FiShoppingCart/>
-                </li>
-                <li>
-                  <FiBell/>
-                </li>
-                <li>
-                  <FiUser/>
-                </li>                
-              </ul>
-            </div>
+        <div className="hidden md:block">
+          <DesktopNav themeBtn={themeBtn}/>
         </div>
-        
-    </nav>
-    <div className="hidden md:block text-black">
-      <DesktopNav/>
-    </div>
-    <div className="block md:hidden text-black">
-      <MobileNav/>
-    </div>
+        <div className="block md:hidden">
+          <MobileNav/>
+        </div>
     
     </>
    
@@ -75,3 +43,5 @@ const Navigation = ({themeBtn}) => {
 };
 
 export default Navigation;
+
+

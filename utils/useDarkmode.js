@@ -41,7 +41,7 @@ export const useDarkmode = (lightRate, darkRate) => {
 
 
 
- const themeBtn = <button onClick={toggleDarkMode} className=" text-yellow-500">
+ const themeBtn = <button onClick={toggleDarkMode} className=" ">
           {bgLightness===darkRate  ? <FiSun /> : <FiMoon />}
         </button>
 

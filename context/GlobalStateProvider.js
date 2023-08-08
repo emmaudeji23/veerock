@@ -7,12 +7,14 @@ const GlobalStateProvider = ({ children }) => {
   const [showSidebar, setShowSidebar] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalType, setModalType] = useState('')
+  const [active, setActive] = useState(false)
 
   useEffect(() => {
     setShowSidebar(false)
-  }, [])
+    
+  }, [active])
   
-
+  
   const openModal = (modalType) => {
     setIsModalOpen(true);
     setModalType(modalType);
@@ -36,6 +38,8 @@ const GlobalStateProvider = ({ children }) => {
     closeModal,
     isModalOpen,
     modalType,
+    active,
+    setActive
     
 
   };

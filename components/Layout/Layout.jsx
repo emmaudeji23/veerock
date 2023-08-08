@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <GlobalStateProvider>
       {
-        bgLightnessLoaded && <div className={`transition bg-light100 text-dark100 text-sm`}>
+        bgLightnessLoaded && <div className={`transition bg-light100 text-dark100 `}>
         <Navigation themeBtn={themeBtn}/>
           {children}
         <Footer/>

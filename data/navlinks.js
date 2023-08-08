@@ -1,11 +1,10 @@
 export const navLinks = [
-    { title: 'Home', href: '/' },
-    { title: 'Workspace', href: '/dashboard' },
-    { title: 'Suppliers', href: '/supplier' },
-    { title: 'Requested Quotes', href: '/' },
-    { title: 'Wishlists', href: '/' },
-    { title: 'Settings', href: '/' },
-    { title: 'Checkout', href: '/' },
+
+    { title: 'About', href: '/about' },
+    { title: 'Projects', href: '/projects' },
+    { title: 'Services', href: '/services' },
+    { title: 'Contact', href: '/contact' },
+    { title: 'Blog', href: '/blog' },
   ];
 
 export const links2 = [
