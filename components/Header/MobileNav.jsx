@@ -51,13 +51,13 @@ const MobileNav = () => {
         }
         <div className="bg-light200 shadow-sm z-20 section-padding py-4 flex justify-between">
 
-            <div className=" flex  flex-shrink-0 ">
+            <Link href={'/'} className=" flex  flex-shrink-0 ">
                 <Image
                     width={90} height={45}
                     src="/logo.png"
                     alt="Logo"
                   />
-            </div> 
+            </Link> 
             
             <div className='text-2xl flex items-center' onClick={()=>setShowSidebar(prev=>!prev)}>
             {

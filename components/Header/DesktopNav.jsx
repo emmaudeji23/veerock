@@ -18,13 +18,13 @@ const DesktopNav = ({themeBtn}) => {
     <div className=' bg-light200 text-dark200 '>
         <div className="section-padding flex justify-between items-center ">
 
-            <div className=" flex  flex-shrink-0 ">
+            <Link href={'/'} className=" flex  flex-shrink-0 ">
                 <Image
                     width={90} height={45}
                     src="/logo.png"
                     alt="Logo"
                   />
-            </div> 
+            </Link> 
 
             <div className="flex items-center space-x-10">
               {

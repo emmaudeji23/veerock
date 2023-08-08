@@ -1,6 +1,10 @@
+import HeroBanner from "@/components/HeroBanner/HeroBanner";
+import { slides } from "@/data/herobannerContent";
 
 export default function Home() {
   return (
-    <div className='flex justify-center '>Veerock</div>
+    <div className=''>
+      <HeroBanner slides={slides} />
+    </div>
   )
 }
