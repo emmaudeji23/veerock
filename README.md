@@ -1,10 +1,8 @@
 
-# Veerock COnstruction COmpany
+# Veerock Construction Company
 
 This is the Veerock company web application. The app built to automate blogging. The app automatically automates the company's social media handles regurlarly.
 
-
-=======
 
 ## Getting Started
 
