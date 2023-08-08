@@ -4,6 +4,8 @@ import Navigation from '../Header/Navigation';
 import Footer from '../Footer/Footer';
 import GlobalStateProvider from '@/context/GlobalStateProvider';
 import { useDarkmode } from '@/utils/useDarkmode';
+import FloatingNavbar from '../FloatingNavBar';
+
 
 const Layout = ({ children }) => {
 
@@ -13,7 +15,9 @@ const Layout = ({ children }) => {
     <GlobalStateProvider>
       {
         bgLightnessLoaded && <div className={`transition bg-light100 text-dark100 `}>
+
         <Navigation themeBtn={themeBtn}/>
+        <FloatingNavbar  themeBtn={themeBtn}/>
           {children}
         <Footer/>
       </div>
