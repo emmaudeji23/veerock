@@ -22,7 +22,9 @@ const Credibility = ({content}) => {
 
       <div className=" w-full grid sm:grid-cols-2 bg-light300">
             {content[1]?.map(({heading, icon, description, slug})=> (
-                <SimpleCard icon={icon} text={description} title={heading}/>
+                <Link href={`/blog/${slug}`}>
+                  <SimpleCard icon={icon} text={description} title={heading}/>
+                </Link>
             ))}
       </div>
     </div>

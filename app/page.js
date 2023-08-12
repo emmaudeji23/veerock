@@ -22,7 +22,7 @@ export default function Home() {
         </div>
       </div>
       <div className="section-padding py-20">
-        <AboutSection/>
+        <AboutSection  content={aboutSection}/>
       </div>
       <div className="section-padding py-20">
         <HowItWorks/>

@@ -1,17 +1,42 @@
 import Button from "../Buttons/Button"
 import Heading from "./Heading"
 import ImageCard from "../Cards/ImageCard"
+import { FiArrowRightCircle } from 'react-icons/fi';
 
-const AboutSection = () => {
+
+const AboutSection = ({content}) => {
   return (
     <div className=' grid sm:grid-cols-2 gap-16 lg:gap-32'>
 
         <div className="block space-y-4">
-            <Heading title={'ABOUT US'} heading={`We're Leading Company For Urban `} styled={`Lifestyle.`}/>
+            <Heading title={content.title} heading={content.heading} styled={``}/>
 
             <p className="text-lg">
-                BuildTab has provided a hassle-free, home-building solutions with its unique sustainable development projects & environment-friendly practices. It has a large scale presence in international.
+                {content.description}
             </p>
+            <div className="grid gap-4 ">
+               
+               {
+                    content.strength?.map((item, i)=>(
+                        <div key={i} className="flex items-center text-xl gap-4">
+                            <FiArrowRightCircle size={24} color=""/>
+                            <p className="">{item}</p>
+                        </div>
+                    ))
+                }
+             
+               {/* <div className="space-y-2">
+               {
+                    content.strength.slice(3,8)?.map((item, i)=>(
+                        <div key={i} className="flex  items-center text-xl gap-3">
+                            <FiArrowRightCircle/>
+                            <p className="">{item}</p>
+                        </div>
+                    ))
+                }
+               </div> */}
+
+            </div>
 
             <div className="flex gap-6">
                <Button variant={'primary'} link={'/about'}>Contact us</Button>

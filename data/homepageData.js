@@ -1,5 +1,4 @@
-import { FaBuilding, FaDraftingCompass,  FaRecycle, FaWifi, FaHome, FaCouch, FaTools,    } from 'react-icons/fa';
-import { GiDoricColumn } from 'react-icons/gi';
+import { FaBuilding, FaDraftingCompass, FaCity, FaColumns, FaRecycle, FaWifi, FaHome, FaCouch, FaTools,    } from 'react-icons/fa';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 
 export const homepageData = () => {
@@ -61,7 +60,7 @@ export const homepageData = () => {
 
             },
             {
-                icon: '',
+                icon: <FaCity/>,
                 heading: " Architectural Brilliance ",
                 description: "Our designs blend creativity with eco-smart solutions.",
                 slug: "timeless-elegance-architectural-design",
@@ -73,6 +72,7 @@ export const homepageData = () => {
     const aboutSection = {
         title: 'ABOUT US',
         heading: 'We are re-inventing urban lifestyle',
+        description: "Revolutionizing construction services with human-centered design and sustainable innovation. Our key strength sets us apart",
         strength: [ "Innovative Urban Visionaries", 
         "Holistic Lifestyle Integration", "Sustainability Champions", "Smart Technology Pioneers", "Quality Project Management", "Cost-Effective Delivery",            
         ]
