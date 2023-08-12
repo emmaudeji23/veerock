@@ -6,37 +6,28 @@ import {SiMinutemailer} from 'react-icons/si'
 
 
 
-export const workspaceLinks = [
+export const howitworks = [
     {
         icon: <AiOutlineCompass/>,
-        title: 'dashboard',
+        title: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
         link: '/workspace/dashboard'
     },
     {
         icon: <FiShoppingCart/>,
-        title: 'orders',
+        title: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
         link: '/workspace/orders'
     },
     {
         icon: <FiDollarSign/>,
-        title: 'invoices',
+        title: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+
         link: '/workspace/invoices'
     },
     {
         icon: <FiBook/>,
-        title: 'inventory',
+        title: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
         link: '/workspace/inventory'
     },
-    {
-        icon: <FiFile/>,
-        title: 'quotes',
-        link: '/workspace/quotes'
-    },
-    {
-        icon: <FiHelpCircle/>,
-        title: 'help',
-        link: '/workspace/help'
-    },   
 ]
 
 

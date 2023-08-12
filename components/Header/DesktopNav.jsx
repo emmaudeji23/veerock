@@ -45,9 +45,9 @@ const DesktopNav = ({themeBtn}) => {
      
             <ul className="flex justify-end items-center space-x-3 text-2xl">
               
-                <div className="flex items-center hover:scale-110 duration-300 cursor-pointer">
+                {/* <div className="flex items-center hover:scale-110 duration-300 cursor-pointer">
                   {themeBtn}
-                </div>
+                </div> */}
 
                 <li className="hover:scale-110 duration-300 cursor-pointer">
                   {!isModalOpen ? <FiSearch width={20} onClick={()=>openModal('searchboxSm')}/> : 

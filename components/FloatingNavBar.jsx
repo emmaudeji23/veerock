@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { FaWhatsapp, FaSun, FaArrowCircleDown, FaArrowCircleUp } from 'react-icons/fa';
+import {PiArrowSquareInBold} from 'react-icons/pi'
 
 const FloatingNavbar = ( {themeBtn}) => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -30,7 +31,7 @@ const FloatingNavbar = ( {themeBtn}) => {
         <div className="text-3xl text-yellow-500 hover:text-yellow-700 cursor-pointer" >
         {themeBtn}
         </div>
-        <FaArrowCircleDown className="text-3xl text-blue-500 hover:text-blue-700 cursor-pointer" />
+        <PiArrowSquareInBold className="text-3xl text-blue-500 hover:text-blue-700 cursor-pointer" />
         {showScrollTop && (
           <FaArrowCircleUp
             className="text-3xl text-gray-500 hover:text-gray-700 cursor-pointer"

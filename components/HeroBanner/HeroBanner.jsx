@@ -20,8 +20,8 @@ const HeroBanner = ({ slides }) => {
   }, [currentSlide]);
   
   return (
-    <div className="h-screen">
-        <div className="relative h-[50%] sm:h-[70%] md:h-[80%] lg:h-[95%] xl:h-full w-full">
+    
+        <div className="relative h-[350px] sm:h-[400px] md:h-[650px]  w-full">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -37,25 +37,27 @@ const HeroBanner = ({ slides }) => {
               objectFit="cover"
             />
             <div className="absolute inset-0 bg-black opacity-50"></div>
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
-              <h2 className="text-4xl font-bold mb-4">{slide.heading}</h2>
-              <p className="text-lg mb-6">{slide.description}</p>
+            <div className="absolute inset-0 px-8 flex flex-col justify-center items-center text-white">
+              <h2 className="text-xl font-bold mb-4">{slide.heading}</h2>
+              <p className=" mb-6 font-bold text-4xl sm:text-5xl md:text-6xl md:max-w-3xl text-center">{slide.description}</p>
               <div className="flex space-x-4">
-                <Button link={'/'} variant={'primary'}>{slide.button1Text}</Button >
-                <Button link={'/about'} variant={'secondary'}>{slide.button2Text}</Button>
+                <Button link={slide.link1} variant={'primary'}>{slide.button1Text}</Button >
+                <Button link={slide.link2} variant={'secondary'}>{slide.button2Text}</Button>
               </div>
             </div>
           </div>
         </div>
       ))}
-      <div className="section-padding text-[100px] text-white  absolute bottom-[35%] left-4">
-        <button onClick={prevSlide}>&#8249;</button>
-      </div>
-      <div className="section-padding absolute text-[100px] text-white bottom-[35%] right-4">
-        <button onClick={nextSlide}>&#8250;</button>
+      <div className="section-padding text-3xl text-white  absolute bottom-[20%] left-0 right-0 flex justify-between w-full">
+        <div className="bg-yellow-600 px-4">
+          <button className='' onClick={prevSlide}>&#8249;</button>
+        </div>
+        <div className="bg-yellow-600 px-4">
+          <button onClick={nextSlide}>&#8250;</button>
+        </div>
       </div>
     </div>
-    </div>
+  
   );
 };
 
