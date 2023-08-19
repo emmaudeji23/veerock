@@ -1,4 +1,4 @@
-import { FaBuilding, FaDraftingCompass, FaCity, FaColumns, FaRecycle, FaWifi, FaHome, FaCouch, FaTools,    } from 'react-icons/fa';
+import { FaBuilding, FaDraftingCompass, FaCity, FaColumns, FaRecycle, FaWifi, FaHome, FaCouch, FaTools, FaHammer, FaLeaf,  FaLightbulb  } from 'react-icons/fa';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 
 export const homepageData = () => {
@@ -78,81 +78,91 @@ export const homepageData = () => {
         ]
     }
 
-    const servicesSection = [
+    const howItWorks = {
+      title: "How It Works",
+      heading: "Our Streamlined Process",
+      steps: [
         {
-          title: "Construction and Maintenance",
-          description: "Skilled construction and maintenance for structures built to last.",
-          icon: <FaTools />
+          title: "Step 1: Conceptualization",
+          description: "We begin by understanding your vision, goals, and requirements. Our experts collaborate with you to conceptualize and outline the project scope.",
+          icon: <FaLightbulb />
         },
         {
-          title: "Real Estate Development",
-          description: "Creating thriving, culturally rich communities.",
-          icon: <FaBuilding />
-        },
-        {
-          title: "Architectural Designs",
-          description: "Visionary designs that harmonize form and function.",
+          title: "Step 2: Innovative Design",
+          description: "Our skilled architects and designers craft innovative and functional blueprints. We incorporate your ideas while ensuring structural integrity and aesthetics.",
           icon: <FaDraftingCompass />
         },
         {
-          title: "Interior Designs",
-          description: "Transforming spaces into personalized urban havens.",
-          icon: <FaCouch />
+          title: "Step 3: Sustainable Planning",
+          description: "We prioritize sustainability in our planning, choosing eco-friendly materials and energy-efficient practices to reduce environmental impact.",
+          icon: <FaLeaf />
         },
         {
-          title: "Waste-to-Energy Solutions",
-          description: "Shaping sustainable urban landscapes with innovative energy solutions.",
-          icon: <FaRecycle />
+          title: "Step 4: Precision Construction",
+          description: "Our experienced construction team meticulously follows the plans, using advanced techniques and tools to ensure precision and quality.",
+          icon: <FaTools />
         },
         {
-          title: "Smart Technology Integration",
-          description: "Infusing urban living with seamless connectivity and efficiency.",
-          icon: <FaWifi />
+          title: "Step 5: Finishing Touches",
+          description: "We add the final details that elevate the project to excellence. From interior finishes to exterior landscaping, every element is thoughtfully executed.",
+          icon: <FaHammer />
+        },
+        {
+          title: "Step 6: Handover and Beyond",
+          description: "Upon completion, we hand over the project and ensure your satisfaction. Our commitment extends beyond delivery, as we provide ongoing support and maintenance.",
+          icon: <FaBuilding />
         }
-      ];
-      
-
-      const howItWorks = {
-        title: "How It Works",
-        heading: "Our Streamlined Process",
+      ]
+    }
+    
+         
+      const servicesSection = {
+        title: "BEST SERVICES",
+        heading: "Unvarying Quality Services",
         list: [
-            {
-              title: "Building Construction and Maintenance",
-              description: "Expert construction and upkeep for enduring structures.",
-              icon: <FaTools />
-            },
+          {
+            title: "Construction and Maintenance",
+            description: "Skilled construction and maintenance for structures built to last.",
+            icon: <FaTools />,
+            link: '/services/#construction'
+          },
             {
               title: "Real Estate Development",
               description: "Creating thriving, culturally rich communities.",
-              icon: <FaBuilding />
+              icon: <FaBuilding />,
+              link: '/services/#real-estate'
             },
             {
               title: "Architectural Designs",
               description: "Visionary designs that harmonize form and function.",
-              icon: <FaDraftingCompass />
+              icon: <FaDraftingCompass />,
+              link: '/services/#architecture'
             },
             {
               title: "Interior Designs",
               description: "Transforming spaces into personalized urban havens.",
-              icon: <FaCouch />
+              icon: <FaCouch />,
+              link: '/services/#interior'
             },
             {
               title: "Waste-to-Energy Solutions",
               description: "Shaping sustainable urban landscapes with innovative energy solutions.",
-              icon: <FaRecycle />
+              icon: <FaRecycle />,
+              link: '/services/#energy'
             },
             {
               title: "Smart Technology Integration",
               description: "Infusing urban living with seamless connectivity and efficiency.",
-              icon: <FaWifi />
+              icon: <FaWifi />,
+              link: '/services/#smart-technology'
             }
           ],
           
       }
       
       const projectsPortfolio = {
-        heading: "Our Projects Portfolio",
-        title: "Explore Our Diverse Urban Creations",
+        title: "Our Projects Portfolio",
+        heading: "Explore Our Diverse Urban Creations",
         items: [
           {
             name: "Cityscape Residences",
@@ -177,14 +187,26 @@ export const homepageData = () => {
             category: "Hospitality",
             imageUrl: ["url_to_image_10.jpg", ],
             description: "A sustainable haven of relaxation and luxury, seamlessly integrated into nature."
-          }
+          },
+          {
+            name: "Cultural Hub Plaza",
+            category: "Mixed-Use",
+            imageUrl: ["url_to_image_10.jpg", ],
+            description: "A dynamic space where commerce, culture, and community converge."
+          },
+          {
+            name: "Cultural Hub Plaza",
+            category: "Mixed-Use",
+            imageUrl: ["url_to_image_10.jpg", ],
+            description: "A dynamic space where commerce, culture, and community converge."
+          },
           // Add more portfolio items as needed
         ]
       };
       
       const testimonialsData = {
-        heading: "Client Testimonials",
-        title: "What Our Clients Are Saying",
+        title: "Client Testimonials",
+        heading : "What Our Clients Are Saying",
         items: [
           {
             name: "Chiamaka Adekunle",
@@ -227,14 +249,19 @@ export const homepageData = () => {
 
         ads1: `Let's Renovate Incomplete Dreams, That Must Be Fulfilled!`,
         ads2: `Transforming Creativity into best Construction services`,
-        getQoute: `Trust us to deliver your bogus project with lost cost. Get Quote.`
+        getQoute: `Trust us to deliver your bogus project at a low cost.`
       };
       
-      
+      const advert2 = {
+        heading: `We're Turning Vision Into Superior Value`,
+        title: 'HIGH PERFORMANCE',
+        details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, obcaecati nesciunt quia delectus itaque vero nihil quos aperiam eaque id suscipit aliquam explicabo dignissimos odit illum error iure saepe expedita.',
+        
+      }
       
 
 
-  return { headline, credibility, aboutSection, servicesSection, howItWorks, projectsPortfolio, testimonialsData, 
+  return { headline, credibility, aboutSection, servicesSection, howItWorks, projectsPortfolio, testimonialsData, advert2
 
   }
 }

@@ -1,19 +1,19 @@
 export const clients = [
     {
       name: 'Client 1',
-      logoUrl: '/fake1.jpg',
+      logoUrl: '/cydamgroup.png',
     },
     {
       name: 'Client 2',
-      logoUrl: '/fake3.jpg',
+      logoUrl: '/logo.jpg',
     },
     {
         name: 'Client 2',
-        logoUrl: '/fake3.jpg',
+        logoUrl: '/cydamgroup.png'
       },
       {
         name: 'Client 2',
-        logoUrl: '/fake3.jpg',
+        logoUrl: '/cydamgroup.png',
       },
     // Add more clients
   ];

@@ -7,6 +7,7 @@ import { useGlobalState } from "@/context/GlobalStateContext";
 import ModalSearchBox from '../Modal/ModalSearchBox';
 import Image from "next/image";
 import {PiArrowSquareInBold} from 'react-icons/pi'
+import GetQuote from "../Buttons/GetQuote";
 
 
 const DesktopNav = ({themeBtn}) => {
@@ -37,9 +38,7 @@ const DesktopNav = ({themeBtn}) => {
                     </Link>
                 ))
               }  
-              <Link href={'/quotes'} className="bg-yellow-400 hover:bg-yellow-500 duration-300 py-6 px-4 text-center flex gap-2 items-center ">
-                Get Quote <PiArrowSquareInBold size={20}/>
-              </Link>
+              <GetQuote/>
             </div>
 
      

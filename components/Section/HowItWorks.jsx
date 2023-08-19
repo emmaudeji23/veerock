@@ -1,34 +1,32 @@
 import React from 'react'
 import ImageCard from '../Cards/ImageCard'
-import StraightCard from '../Cards/StraightCard'
-import { howitworks } from '@/data/howitworks'
 
-const HowItWorks = () => {
+import Link from 'next/link'
+import SimpleCard from '../Cards/SimpleCard'
+import Heading from './Heading'
+
+const HowItWorks = ({content}) => {
   return (
-    <div className=' grid sm:grid-cols-2 gap-6 lg:gap-32'>
-        <ImageCard 
-            imgUrl={''}
-            component={<h3 className='text-4xl font-semibold'>
-                We have Lorem ipsum dolor sit.
-            </h3 >}
+    <div className=' space-y-6 '>
+       
         
-        />
-        <div className="flex items-center">
-        <div className="grid gap-6">
-            {
-                howitworks?.map(({icon,title,link}) => (
-                    <div key={title} className="">
-                        <StraightCard
-                            text={title}
-                            icon={<div className='text-6xl'>
-                                {icon}
-                            </div>}
-                        />
-                    </div>
-                ))
-            }
-        </div>
-        </div>
+            <div className="">
+            <Heading type={'flex'} title={content.title} heading={content.heading} styled={``}/>
+            </div>
+            
+                <div className="grid md:grid-cols-3  bg-light300">
+                    {
+                        content.steps?.map(({icon,title,description}) => (
+                            <div key={title} className="">
+                               
+                                    <SimpleCard icon={icon} text={description} title={title}/>
+                        
+                            </div>
+                        ))
+                    }
+                </div>
+            
+       
         
     </div>
   )

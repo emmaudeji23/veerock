@@ -5,7 +5,7 @@ import SimpleCard from "../Cards/SimpleCard";
 
 const Credibility = ({content}) => {
   return (
-    <div className="grid md:grid-cols-2 max-w-[1000px] m-auto">
+    <div className="grid md:grid-cols-2 max-w-[1300px] m-auto">
       
       <div className=" pt-12 px-12 bg-blue-900 text-white grid justify-between h-full">
             <div className="h-full mb-4 space-y-2">
@@ -22,7 +22,7 @@ const Credibility = ({content}) => {
 
       <div className=" w-full grid sm:grid-cols-2 bg-light300">
             {content[1]?.map(({heading, icon, description, slug})=> (
-                <Link href={`/blog/${slug}`}>
+                <Link href={`/blog/${slug}`} key={slug}>
                   <SimpleCard icon={icon} text={description} title={heading}/>
                 </Link>
             ))}

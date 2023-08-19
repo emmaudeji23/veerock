@@ -10,10 +10,16 @@ import TestimonialSection from "@/components/Section/TestimonialSection";
 import { clients } from "@/data/clients";
 import ClienteleSection from "@/components/Section/ClienteleSection";
 import { homepageData } from "@/data/homepageData";
+import BlogSection from "@/components/Section/BlogSection";
+import { blogPage } from "@/data/blogPageData";
+
 
 export default function Home() {
-  const { headline, credibility, aboutSection, servicesSection, howItWorks, projectsPortfolio, testimonialsData,   } = homepageData()
-  return (
+  const { headline, credibility, aboutSection, servicesSection, howItWorks, projectsPortfolio, testimonialsData, advert2  } = homepageData()
+
+  const {blogs} = blogPage()
+
+   return (
     <div className=''>
       <div className="">
         <HeroBanner slides={headline} />
@@ -24,17 +30,18 @@ export default function Home() {
       <div className="section-padding py-20">
         <AboutSection  content={aboutSection}/>
       </div>
-      <div className="section-padding py-20">
-        <HowItWorks/>
-      </div>
       <div className=" py-20 bg-blue-950">
-        <ServicesSection/>
+        <ServicesSection content={servicesSection}/>
       </div>
       <div className="section-padding py-20">
-        <ProjectSection/>
+        <HowItWorks content={howItWorks}/>
+      </div>
+     
+      <div className="section-padding py-20">
+        <ProjectSection content={projectsPortfolio}/>
       </div>
       <div className="section-padding py-20">
-        <TestimonialSection/>
+        <TestimonialSection content={testimonialsData}/>
       </div>
       <div>
         <AdvertSection
@@ -50,11 +57,15 @@ export default function Home() {
           ]}
         />
       </div>
-      <div className="py-20 md:py-0">
-        <AdverSection2/>
+      <div className=" " >
+        <AdverSection2 content={advert2}/>
       </div>
-      <div className="section-padding py-20">
+      <div className="section-padding md:py-20">
         <ClienteleSection clients={clients} />
+      </div>
+
+      <div className="section-padding py-20">
+        <BlogSection content={blogs}/>
       </div>
       
     </div>

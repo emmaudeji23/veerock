@@ -24,17 +24,6 @@ const AboutSection = ({content}) => {
                         </div>
                     ))
                 }
-             
-               {/* <div className="space-y-2">
-               {
-                    content.strength.slice(3,8)?.map((item, i)=>(
-                        <div key={i} className="flex  items-center text-xl gap-3">
-                            <FiArrowRightCircle/>
-                            <p className="">{item}</p>
-                        </div>
-                    ))
-                }
-               </div> */}
 
             </div>
 

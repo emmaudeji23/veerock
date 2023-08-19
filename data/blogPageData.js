@@ -1,11 +1,14 @@
 
 export const blogPage = () => {
     const heading = {
-        
+      
     }
 
     
-    const blogs = [
+    const blogs = {
+      heading: 'Our Recent News & Blog',
+    title: 'OUR BLOG',
+    blogs: [
         {
           title: "5 Sustainable Construction Practices for a Greener Future",
           imageUrl: "url_to_image_1.jpg",
@@ -525,7 +528,7 @@ export const blogPage = () => {
 
 
 
-      ]
+      ]}
 
     return { blogs, 
 

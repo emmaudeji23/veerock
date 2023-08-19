@@ -128,3 +128,31 @@ a {
 .animate-slow-appear {
   animation: slow-appear 0.5s ease-out;
 }
+
+
+/* /Carousel */
+.carousel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.slideContainer {
+  flex: 1;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.item {
+  flex: 0 0 100%;
+  
+}

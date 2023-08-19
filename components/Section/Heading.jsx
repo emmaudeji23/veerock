@@ -1,15 +1,13 @@
 import { VerticalLine } from "../Shapes/Shapes"
 
-const Heading = ({title, heading, styled}) => {
+const Heading = ({title, white, type, heading, styled}) => {
   return (
-    <div className='flex  gap-6'>
-        <div className=" flex fex-col bg-yellow-400 w-6 h-full">
-          <div className="h-24">
-              
-          </div>
+    <div className={type ? `flex gap-6` : 'grid grid-cols-10  gap-1'}>
+        <div className={`${type ? 'h-16'  : 'colspan-1'}  bg-yellow-400 w-4 `}>
+        
 
         </div>
-        <div className="space-y-1">
+        <div className={`space-y-1 col-span-9 ${white && "text-white"} `}>
             <h6 className="text-xl font-semibold text-light300">{title}</h6>
             <h3 className="text-4xl font-semibold">
             {heading} <span className="text-yellow-500">{styled}</span>

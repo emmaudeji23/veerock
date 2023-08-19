@@ -2,40 +2,48 @@
 import Heading from "./Heading"
 import LearnMore from "../Buttons/LearnMore"
 import TestimonialSlider from "../TestimonialSlider"
+import Carousel from "@/utils/useCarousel"
+import { contactlinks } from "@/data/contactlinks"
+import Button from "../Buttons/Button"
+import GetQuote from "../Buttons/GetQuote"
 
-const TestimonialSection = () => {
+const TestimonialSection = ({content}) => {
   return (
 
-    <div className="grid md:flex gap-6 justify-between ">
-        <div className="w-full h-full flex flex-col justify-between ">
-            <Heading title={'CUSTOMER TESTIMONIALS'} heading={`What Are They Saying About Our `} styled={'Services'} />
+    <div className="grid lg:grid-cols-2 gap-6  items-cente">
+        <div className="w-full h-ful space-y-6">
+            <Heading title={content.title} heading={content.heading} />
 
-            <div className="">
-                <TestimonialSlider/>
+            <div className="bg-light200 rounded-xl pb-4 text-lg p-4 sm:p-10 ">
+                    <div className="border-b-2 border-zinc-500">
+                        <Carousel list={content.items}/>
+                    </div>
+                    <p className="py-4">{content.getQoute}</p>
+                   <div className="flex "><GetQuote/></div>
             </div>
         </div>
 
-        <div className="w-full text-white h-full grid gap-4 md:grid-cols-2">
-            <div className="h-80 sm:h-96 p-8 flex items-center  gap-4 w-full bg-yellow-600 ">
+        <div className="w-full text-white  grid gap-4 sm:grid-cols-2">
+            <div className="h-80  p-8 flex items-center  gap-4 w-full bg-yellow-600 ">
                 <div className="">
                 <p className="text-3xl font-semibold pb-2">
-                Let's Renovate Incomplete Dreams, That Must Be Fulfilled!
+                 {content.ads1}
                 </p>
                 <LearnMore link={'/about'} />
                 </div>
             </div>
-            <div className="h-80 sm:h-96 w-full relative ">
+            <div className="h-80 w-full relative ">
                 <div className="bg-red-500 h-80 w-full md:absolute bottom-0 left-0"></div>
 
             </div>
-            <div className="h-80 sm:h-96 w-full relative ">
+            <div className="h-80  w-full relative ">
                 <div className="bg-red-500 h-80 w-full md:absolute top-0 right-0"></div>
 
             </div>
-            <div className="h-80 sm:h-96 p-8 flex items-center  gap-4 w-full bg-blue-900 ">
+            <div className="h-80  p-8 flex items-center  gap-4 w-full bg-blue-900 ">
                 <div className="">
                 <p className="text-3xl font-semibold pb-2">
-                Let's Renovate Incomplete Dreams, That Must Be Fulfilled!
+                    {content.ads2}
                 </p>
                 <LearnMore link={'/about'} />
                 </div>
