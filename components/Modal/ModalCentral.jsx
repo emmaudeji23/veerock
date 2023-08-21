@@ -6,8 +6,8 @@ const ModalCentral = ({ isOpen, onClose, type, children }) => {
       };
   return (
     <>
-      {type==='central' && isOpen && (
-        <div onClick={onClose}  className="fixed top-0 left-0 bottom-0 right-0 inset-0 z-50 transition-opacity bg-slate-900 bg-opacity-50 flex items-center justify-center">
+      { isOpen && (
+        <div onClick={onClose}  className={`${isOpen ? 'translate-x-0' : '-translate-x-1'} transition-transform duration-500 fixed top-0 left-0 bottom-0 right-0 inset-0 z-50 bg-slate-900 bg-opacity-50 flex items-center justify-center`}>
           
             <div className="z-50"  onClick={stopPropagation}>
                 {children}
@@ -19,3 +19,4 @@ const ModalCentral = ({ isOpen, onClose, type, children }) => {
 }
 
 export default ModalCentral
+

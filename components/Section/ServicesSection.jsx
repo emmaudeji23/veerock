@@ -20,7 +20,7 @@ const ServicesSection = ({content}) => {
         <div className="w-full grid lg:flex gap-6">
             <div className="lg:cols-span-2  w-full">
                 <div className="w-full  h-80 overflow-hidden">
-                    <img src={'/fake2.jpg'} alt="section" className="w-full h-full object-cover" />
+                    <img src={content.imgUrl} alt="section" className="w-full h-full object-cover" />
                 </div>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:cols-span-2 h-full w-full">

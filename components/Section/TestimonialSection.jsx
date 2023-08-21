@@ -1,11 +1,12 @@
 
 import Heading from "./Heading"
-import LearnMore from "../Buttons/LearnMore"
+import PlainBtn from "../Buttons/PlainBtn"
 import TestimonialSlider from "../TestimonialSlider"
 import Carousel from "@/utils/useCarousel"
 import { contactlinks } from "@/data/contactlinks"
 import Button from "../Buttons/Button"
 import GetQuote from "../Buttons/GetQuote"
+import ImageContainer from "../Cards/ImageContainer"
 
 const TestimonialSection = ({content}) => {
   return (
@@ -24,20 +25,24 @@ const TestimonialSection = ({content}) => {
         </div>
 
         <div className="w-full text-white  grid gap-4 sm:grid-cols-2">
-            <div className="h-80  p-8 flex items-center  gap-4 w-full bg-yellow-600 ">
+            <div className="h-80  p-8 flex items-center  gap-4 w-full bg-yellow ">
                 <div className="">
                 <p className="text-3xl font-semibold pb-2">
                  {content.ads1}
                 </p>
-                <LearnMore link={'/about'} />
+                <PlainBtn text={'View Projects'} link={'/projects'} />
                 </div>
             </div>
             <div className="h-80 w-full relative ">
-                <div className="bg-red-500 h-80 w-full md:absolute bottom-0 left-0"></div>
+                <div className=" h-80 w-full md:absolute bottom-0 left-0 overflow-hidden">
+                    <ImageContainer img={content.imgUrl1} alt='veerock_palace'/>
+                </div>
 
             </div>
             <div className="h-80  w-full relative ">
-                <div className="bg-red-500 h-80 w-full md:absolute top-0 right-0"></div>
+                <div className="h-80 w-full md:absolute top-0 right-0">
+                    <ImageContainer img={content.imgUrl2} alt='mural_floor'/>
+                </div>
 
             </div>
             <div className="h-80  p-8 flex items-center  gap-4 w-full bg-blue-900 ">
@@ -45,7 +50,7 @@ const TestimonialSection = ({content}) => {
                 <p className="text-3xl font-semibold pb-2">
                     {content.ads2}
                 </p>
-                <LearnMore link={'/about'} />
+                <PlainBtn text={'View Projects'} link={'/about'} />
                 </div>
             </div>
         </div>

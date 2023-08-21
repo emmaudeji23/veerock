@@ -6,7 +6,7 @@ export const homepageData = () => {
         {
             heading: 'SUSTAINABLE AND INNOVATIVE CONSTRUCTION',
             description: "We Build Your Dream With Passion",
-            image: '/fake1.jpg',
+            image: '/man-woman-engineer-pointing.jpg',
             button2Text: 'All Projects',
             button1Text: 'Contact Us',   
             link2: '/projects',
@@ -17,15 +17,15 @@ export const homepageData = () => {
             description: "Contact Us For Your Building Projects",
             button2Text: 'Get Quote',
             button1Text: 'Contact Us',
-            image: '/fake2.jpg',
+            image: '/engineer-man-office.jpg',
             link2: '/quote',
             link1: '/contact'
         },
         {
             heading: 'UNMATCHED CREDIBLITY AND EXCELLENCE',
-            description: "Trust Us To Streamline Your Complex Project",
+            description: "Trust Us To Streamline Your Bogus Project",
             button1Text: 'Contact Us',
-            image: '/fake3.jpg',
+            image: '/man-woman-engineer-explaing.jpg',
             button2Text: 'Learn More',
             link2: '/about',
             link1: '/contact'
@@ -36,6 +36,8 @@ export const homepageData = () => {
         {
             heading: "We Take Pride in Our Craft, Delivering Quality. Building a Better Tomorrow.",
             description: "From towering architectural marvels to intricate interior designs, each endeavor is meticulously executed, showcasing our dedication to impeccable craftsmanship.",
+            imgUrl: `/man-engineer-with-paper.jpg`,
+            imgAlt: `credibility`
             
         },
         [
@@ -71,11 +73,12 @@ export const homepageData = () => {
 
     const aboutSection = {
         title: 'ABOUT US',
-        heading: 'We are re-inventing urban lifestyle',
-        description: "Revolutionizing construction services with human-centered design and sustainable innovation. Our key strength sets us apart",
-        strength: [ "Innovative Urban Visionaries", 
-        "Holistic Lifestyle Integration", "Sustainability Champions", "Smart Technology Pioneers", "Quality Project Management", "Cost-Effective Delivery",            
-        ]
+        heading: 'We Save You Time And Budget',
+        description: "Revolutionizing construction services with sustainable innovation at a low cost without compromizing efficiency. Our key strength sets us apart",
+        strength: [ "Innovative Technolgy", 
+        "Holistic Lifestyle Integration", "Sustainability Champions", "Experienced Team And Partners", "Quality Project Management", "Cost-Effective Delivery",            
+        ],
+        imgUrl: `/woman-engineer.jpg`
     }
 
     const howItWorks = {
@@ -84,32 +87,32 @@ export const homepageData = () => {
       steps: [
         {
           title: "Step 1: Conceptualization",
-          description: "We begin by understanding your vision, goals, and requirements. Our experts collaborate with you to conceptualize and outline the project scope.",
+          description: "Our experts collaborate with you to conceptualize and define your project goals and scope.",
           icon: <FaLightbulb />
         },
         {
           title: "Step 2: Innovative Design",
-          description: "Our skilled architects and designers craft innovative and functional blueprints. We incorporate your ideas while ensuring structural integrity and aesthetics.",
+          description: "Our skilled architects craft functional blueprints of your idea while ensuring structural integrity.",
           icon: <FaDraftingCompass />
         },
         {
           title: "Step 3: Sustainable Planning",
-          description: "We prioritize sustainability in our planning, choosing eco-friendly materials and energy-efficient practices to reduce environmental impact.",
+          description: "We prioritize sustainability in our planning, choosing durable materials and efficient practices",
           icon: <FaLeaf />
         },
         {
           title: "Step 4: Precision Construction",
-          description: "Our experienced construction team meticulously follows the plans, using advanced techniques and tools to ensure precision and quality.",
+          description: "Our experienced construction team meticulously follows the plans, execute the project.",
           icon: <FaTools />
         },
         {
           title: "Step 5: Finishing Touches",
-          description: "We add the final details that elevate the project to excellence. From interior finishes to exterior landscaping, every element is thoughtfully executed.",
+          description: "From interior finishes to exterior landscaping, we add the final details that elevate the project.",
           icon: <FaHammer />
         },
         {
           title: "Step 6: Handover and Beyond",
-          description: "Upon completion, we hand over the project and ensure your satisfaction. Our commitment extends beyond delivery, as we provide ongoing support and maintenance.",
+          description: "Upon completion,our commitment extends beyond delivery, we provide ongoing support and maintenance.",
           icon: <FaBuilding />
         }
       ]
@@ -157,6 +160,7 @@ export const homepageData = () => {
               link: '/services/#smart-technology'
             }
           ],
+          imgUrl: '/estate_view1.jpeg'
           
       }
       
@@ -167,37 +171,61 @@ export const homepageData = () => {
           {
             name: "Cityscape Residences",
             category: "Residential",
-            imageUrl: ["url_to_image_10.jpg", ],
-            description: "Elegant urban living spaces offering a blend of comfort and modern design."
+            imageUrl: ["/veerock/designs_6.jpeg",  '/veerock/biulding.jpeg', "/veerock/construction.jpeg", "/veerock/boss.jpeg" ],
+            description: "Elegant urban living spaces offering a blend of comfort and modern design.",
           },
           {
-            name: "Metropolis Tower",
+            name: "Metropolis Towers",
             category: "Commercial",
-            imageUrl: ["url_to_image_10.jpg", ],
+            imageUrl: ["/veerock/construction5.jpeg", "/veerock/construction_sky.jpeg", "/veerock/structure04.jpeg", "/veerock/structure01.jpeg", "/veerock/structure04.jpeg", "/veerock/structure4.jpeg", "/veerock/structure3.jpeg", "/veerock/worker2.jpeg" ],
             description: "A towering emblem of corporate excellence and urban sophistication."
           },
           {
-            name: "Cultural Hub Plaza",
+            name: "Presidential Plaza",
             category: "Mixed-Use",
-            imageUrl: ["url_to_image_10.jpg", ],
-            description: "A dynamic space where commerce, culture, and community converge."
+            imageUrl: ["/veerock/designs_3.jpeg", "/veerock/designs_7.jpeg", "/veerock/designs_6.jpeg", "/veerock/designs_4.jpeg", "/veerock/designs7.jpeg",  '/veerock/construction_3.jpeg',  '/veerock/house_2.jpeg', '/veerock/house_1.jpeg',],
+            description: "A dynamic space where commerce, culture, and community converge.",
           },
           {
             name: "Eco-Resort Oasis",
             category: "Hospitality",
-            imageUrl: ["url_to_image_10.jpg", ],
+            imageUrl: ["/veerock/design_special2.jpeg", "/veerock/design_special.jpeg", "/veerock/design_special3.jpeg" ],
             description: "A sustainable haven of relaxation and luxury, seamlessly integrated into nature."
           },
           {
-            name: "Cultural Hub Plaza",
+            name: "Swimming Pool Plaza",
             category: "Mixed-Use",
-            imageUrl: ["url_to_image_10.jpg", ],
+            imageUrl: ["/veerock/swimmingpool4.jpeg","/veerock/swimmingpool2.jpeg","/veerock/swimmingpool3.jpeg","/veerock/swimmingpool1.jpeg",  ],
             description: "A dynamic space where commerce, culture, and community converge."
           },
           {
-            name: "Cultural Hub Plaza",
+            name: "Multi-flat Complex",
             category: "Mixed-Use",
-            imageUrl: ["url_to_image_10.jpg", ],
+            imageUrl: ["/veerock/estate_view3.jpeg", "/veerock/estate_view1.jpeg", "/veerock/estate_view2.jpeg", "/veerock/estate_view5.jpeg", ],
+            description: "A dynamic space where commerce, culture, and community converge."
+          },
+          {
+            name: "Interior Convenience",
+            category: "Mixed-Use",
+            imageUrl: [ "/veerock/convenience4.jpeg", "/veerock/convenience1.jpeg", "/veerock/convenience2.jpeg","/veerock/convenience3.jpeg","/veerock/convenience5.jpeg","/veerock/convenience6.jpeg","/veerock/convenience8.jpeg", ],
+            description: "A dynamic space where commerce, culture, and community converge."
+          },
+          {
+            name: "Exquisite Residence",
+            category: "Homely",
+            imageUrl: [ "/veerock/design1.jpeg", "/veerock/design.jpeg", "/veerock/design_2.jpeg","/veerock/design_5.jpeg","/veerock/construction2.jpeg", ],
+            description: "A dynamic space where commerce, culture, and community converge."
+          },
+          {
+            name: "Kitchen Complex",
+            category: "Kitchen Complexes",
+            imageUrl: [ "/veerock/kitchen3.jpeg", "/veerock/kitchen1.jpeg","/veerock/kitchen2.jpeg","/veerock/kitchen4.jpeg","/veerock/kitchen5.jpeg","/veerock/kitchen6.jpeg", ],
+            description: "A dynamic space where commerce, culture, and community converge."
+          },
+          {
+            name: "Mural Designs",
+            category: "Interior Designs",
+            imageUrl: [ "/veerock/mural_floor1.jpeg",  "/veerock/mural_wall.jpeg", "/veerock/mural_ceiling.jpeg",  "/veerock/mural_wall.jpeg",  "/veerock/mural_wall2.jpeg",  "/veerock/mural_wall3.jpeg",  "/veerock/mural_wall4.jpeg",],
             description: "A dynamic space where commerce, culture, and community converge."
           },
           // Add more portfolio items as needed
@@ -247,21 +275,30 @@ export const homepageData = () => {
           // Add more testimonials as needed
         ],
 
-        ads1: `Let's Renovate Incomplete Dreams, That Must Be Fulfilled!`,
-        ads2: `Transforming Creativity into best Construction services`,
+        ads1: `Renovating and building modern houses and palaces at a low budget!`,
+        imgUrl1: '/palace2.jpeg',
+        imgUrl2: '/mural_wall4.jpeg',
+        ads2: `Perfect interior designs with easthetics that brings comfort.`,
         getQoute: `Trust us to deliver your bogus project at a low cost.`
       };
       
-      const advert2 = {
-        heading: `We're Turning Vision Into Superior Value`,
-        title: 'HIGH PERFORMANCE',
-        details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, obcaecati nesciunt quia delectus itaque vero nihil quos aperiam eaque id suscipit aliquam explicabo dignissimos odit illum error iure saepe expedita.',
-        
+    const advert1 = {
+        heading: 'We Offer The Most Complete House Renovating Services.',
+        description: ' Witness the magic of turning houses into personalized dream residences. Our complete renovating services are designed to create homes that encapsulate your aspirations.',
+        imgUrl: '/veerock/design02.jpeg',
       }
       
+      const advert2 = {
+        heading: `We're Turning Vision Into Superior Value`,
+        title: 'PROVEN CAPACITY & COMPETENCE',
+        details: 'Our track record speaks for itself, underscoring our adeptness in bringing ambitious projects to fruition. Step into a realm where sizeable undertakings are met with unwavering expertise, turning monumental visions into remarkable realities.',
+        imgUrl: '/veerock/construction4.jpeg'
+        
+      }
 
 
-  return { headline, credibility, aboutSection, servicesSection, howItWorks, projectsPortfolio, testimonialsData, advert2
+
+  return { headline, advert1, credibility, aboutSection, servicesSection, howItWorks, projectsPortfolio, testimonialsData, advert2
 
   }
 }

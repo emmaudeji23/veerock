@@ -1,8 +1,25 @@
+'use client'
+
 import Heading from "./Heading"
 import Button from "../Buttons/Button"
 import ImageCard from "../Cards/ImageCard"
+import ProjectDetails from "../Modal/ProjectDetails"
+import { useState , useEffect} from "react"
 
 const ProjectSection = ({content}) => {
+    const [showProjectDetails, setShowProjectDetails] = useState(false)
+    const [items, setItems] = useState('')
+    const handleClick = (item) =>{
+        setItems(item)
+        setShowProjectDetails(true)
+    }
+
+    useEffect(() => {
+     setShowProjectDetails(false)
+    }, [])
+    
+    
+    console.log(showProjectDetails)
   return (
     <div >
         <div className=" pb-14  sm:flex justify-between items-center">
@@ -13,14 +30,20 @@ const ProjectSection = ({content}) => {
         </div>
         <div className="pb-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {
-                content.items.map(({name, category, imageUrl, description}, i) => (
-                    <ImageCard component={<p>{name}</p>}/>
-                    // <div className="text-6xl">a</div>
+                content.items.map((item, i) => (
+                    <>
+                        <div key={i} onClick={()=>handleClick(item)}>
+                            <ImageCard imgUrl={item.imageUrl[0]} component={<p>{item.name}</p>}/>
+                        </div>
+                       
+                </>
                 ))
             }
         </div>
         <Button link='/projects' variant={'primary'}>Vew All Projects</Button>
-        
+    
+            
+        {showProjectDetails && <ProjectDetails item={items}  isOpen={showProjectDetails} onClose={()=>setShowProjectDetails(false)}/>}
     </div>
   )
 }

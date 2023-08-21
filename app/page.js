@@ -15,7 +15,7 @@ import { blogPage } from "@/data/blogPageData";
 
 
 export default function Home() {
-  const { headline, credibility, aboutSection, servicesSection, howItWorks, projectsPortfolio, testimonialsData, advert2  } = homepageData()
+  const { headline, credibility, aboutSection, servicesSection, howItWorks, projectsPortfolio, advert1, testimonialsData, advert2  } = homepageData()
 
   const {blogs} = blogPage()
 
@@ -23,7 +23,7 @@ export default function Home() {
     <div className=''>
       <div className="">
         <HeroBanner slides={headline} />
-        <div className="section-padding py-20 sm:py-0 sm:relative  -top-20">
+        <div className="section-padding pt-10 pb-20 md:py-0 md:relative  -top-20">
           <Credibility content={credibility}/>
         </div>
       </div>
@@ -44,18 +44,7 @@ export default function Home() {
         <TestimonialSection content={testimonialsData}/>
       </div>
       <div>
-        <AdvertSection
-          
-          backgroundImage="/fake1.jpg"
-          title="We Offer The Most Complete
-          House Renovating Services."
-          description="Constructor explains how you can enjoy high end flooring trends like textured wood and with new
-          laminate flooring. As the general contractor."
-          buttons={[
-            { text: 'Learn More' },
-            { text: 'Get Started' },
-          ]}
-        />
+        <AdvertSection content={advert1}  />
       </div>
       <div className=" " >
         <AdverSection2 content={advert2}/>

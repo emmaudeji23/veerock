@@ -49,14 +49,14 @@ a {
   text-decoration: none;
 }
 
-.section-padding {
-  @apply max-w-[1240px] px-4 m-auto;
-}
 
 
 
 /*======================================*/
 /* custom styles */
+.section-padding {
+  @apply max-w-[1240px] px-4 m-auto;
+}
 
 .bg-light100 {
   background-color: var(--light100);
@@ -93,6 +93,35 @@ a {
 .border-light300 {
   @apply border-[var(--light300)];
 }
+
+.bg-yellow {
+  @apply bg-yellow-500
+}
+
+.text-yellow {
+  @apply text-yellow-500
+}
+
+.border-yellow {
+  @apply border-yellow-500
+}
+
+.hover-yellow {
+  @apply bg-yellow-500 hover:bg-yellow-600 duration-300  text-gray-900
+}
+
+.bg-blue{
+  @apply bg-blue-600
+}
+
+.text-blue{
+  @apply text-blue-600
+}
+
+.hover-blue{
+  @apply bg-blue-600 hover:bg-blue-700 duration-300 text-white
+}
+
 
 
 

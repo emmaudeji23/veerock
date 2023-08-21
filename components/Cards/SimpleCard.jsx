@@ -1,7 +1,7 @@
 
 const SimpleCard = ({icon, title, text,  }) => {
   return (
-    <div className="flex sm:grid sm:text-center w-full sm:justify-center items-center gap-3 p-6 shadow-md">
+    <div className="flex gap-3 sm:flex-col sm:text-center w-full h-full sm:justify-center items-center p-6 bg-light300 hover:ring hover:ring-yellow-500 duration-300">
                    
         <div className="flex text-4xl sm:justify-center ">
             <div className="p-3 grid rounded-full bg-light100 text-yellow-400">
