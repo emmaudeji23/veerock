@@ -12,7 +12,7 @@ const ProjectDetails = ({isOpen, item, onClose}) => {
     
   return (
     <ModalCentral isOpen={isOpen} onClose={onClose}>
-        <div className="m-auto h-[90vh] bg-white max-w-8xl gap-2 flex flex-col">
+        <div className="m-auto h-[90vh] bg-light200 max-w-8xl gap-2 flex flex-col">
             <div className="w-full h-[86%] gap-2 flex flex-col lg:flex-row">
                 <div className="w-full h-full lg:w-4/5 overflow-hidden relative ">
                     <ImageContainer img={show} alt={item.name} />
@@ -22,11 +22,9 @@ const ProjectDetails = ({isOpen, item, onClose}) => {
                     {
                         item.imageUrl?.map((url, i)=>(
                             <div className="overflow-hidden w-20 h-20 hover:ring hover:ring-yellow-600 duration-300 flex-shrink-0 mb-3 lg:mb-0 lg:w-full lg:h-40" key={i} onClick={()=>setShow(url)}>
-                                
                                 <ImageContainer img={url} />
                             </div>
                         ))
-
                     }
                 </div>
 
@@ -37,8 +35,6 @@ const ProjectDetails = ({isOpen, item, onClose}) => {
                 </h3>
                 {item.description}
             </div>
-
-
         </div>
     </ModalCentral>
   )

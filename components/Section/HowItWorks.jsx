@@ -14,7 +14,7 @@ const HowItWorks = ({content}) => {
             <Heading type={'flex'} title={content.title} heading={content.heading} styled={``}/>
             </div>
             
-                <div className="grid md:grid-cols-3  bg-light300">
+                <div className="grid md:grid-cols-3 gap-1  ">
                     {
                         content.steps?.map(({icon,title,description}) => (
                             <div key={title} className="">
