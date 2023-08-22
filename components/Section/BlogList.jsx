@@ -26,8 +26,10 @@ const BlogList = ({filteredBlogs}) => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {!filteredBlogs?.blogs.length ? (<p className="flex justify-center items-center w-full h-full text-xl font-medium">No blog post listed</p>) :
-        paginatedBlogs?.map((blog, index) => (
-          <BlogCard key={index} {...blog} />
+        paginatedBlogs?.map(({title, imageUrl, category, introduction, slug}, index) => (
+          <div key={index} className='h-full'>
+                            <BlogCard title={title} imageUrl={imageUrl} category={category} introduction={introduction} slug={slug} />
+                        </div>
         ))}
       </div>
       {/* Add pagination links */}
