@@ -19,7 +19,7 @@ const BlogList = ({filteredBlogs}) => {
   return (
     <div>
       <div className="">
-        {!filteredBlogs.category && <p className="text-red-400 pb-2" >Category does not exist</p>}
+        {/* {!filteredBlogs.category && <p className="text-red-400 pb-2" >Category does not exist</p>} */}
       <h1 className="text-2xl font-semibold mb-4">
           {filteredBlogs.category ? `Blogs in ${filteredBlogs.category}` : 'All Blogs'}
           </h1>

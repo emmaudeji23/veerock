@@ -1,8 +1,11 @@
-import React from 'react'
+import PageHeroBanner from "@/components/HeroBanner/PageHeroBanner"
 
 const Project = () => {
   return (
-    <div>Project</div>
+    <>
+      <PageHeroBanner bannerImg={`/helmet.jpg`} title='Our Project Portfolio' /> 
+      <div className="h-screen "></div>
+    </>
   )
 }
 

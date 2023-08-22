@@ -29,12 +29,12 @@ const BlogLayout = ({ children }) => {
 
   return (
     <div className="">
-        <PageHeroBanner title="Blog Categories " breadcomb='' />
+        <PageHeroBanner bannerImg='/woman-eng-smiling.jpg' title="Blogs " breadcomb='' />
      
       <div className="lg:flex max-w-[1420px] mx-auto px-2">
         <nav className="w-full bg-light200 lg:w-80 lg:py-8  max-lg:overflow-auto ">
             
-            <ul  className=" w-full flex lg:flex-col lg:gap-4 gap-1 w-full p-4 lg:w-80 ">
+            <ul  className="flex lg:flex-col lg:gap-4 gap-1 w-full p-4 lg:w-80 ">
             {allCategories.map((category, index) => (
                 <Link href={`/blogs/${category}`} key={index} className="bg-light300 hover:ring hover:ring-yellow-500 duration-300 flex-shrink-0 p-4">
                     {category}

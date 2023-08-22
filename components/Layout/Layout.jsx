@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer';
 import GlobalStateProvider from '@/context/GlobalStateProvider';
 import { useDarkmode } from '@/utils/useDarkmode';
 import FloatingNavbar from '../FloatingNavBar';
+import QuoteModal from '../Modal/QuoteModal';
 
 
 const Layout = ({ children }) => {
@@ -15,7 +16,7 @@ const Layout = ({ children }) => {
     <GlobalStateProvider>
       {
         bgLightnessLoaded && <div className={`transition bg-light100 text-dark100 `}>
-
+        <QuoteModal/>
         <Navigation themeBtn={themeBtn}/>
         <FloatingNavbar  themeBtn={themeBtn}/>
           {children}

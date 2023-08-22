@@ -45,20 +45,22 @@ const [commentFormData, setCommentFormData] = useState({
 
 
   return (
-    <div className="max-w-3xl lg:pl-8">
-      <h1 className="text-5xl font-semibold mb-4">{title}</h1>
+    <div className="max-w-4xl lg:pl-8 text-lg">
+      <h1 className="text-2xl md:text-4xl font-semibold mb-4">{title}</h1>
       
-      
-      <p>Author: {author}</p>
-      <p>Date: {date}</p>
-      <p>Likes: {likes}</p>
-      <p>Category: {category}</p>
+      <div className="mb-4 font-semibold">{introduction}</div>
+      <div className="flex mb-4 flex-wrap gap-4 justify-between w-full">
+      <p className='flex-shrink-0'>Author: {author}</p>
+      <p className='flex-shrink-0'>Date: {date}</p>
+      <p className='flex-shrink-0'>Likes: {likes}</p>
+      <p className='flex-shrink-0'>Category: {category}</p>
+      </div>
 
       <div className="h-[500px] w-full overflow-hidden pb-4">
         <ImageContainer img={imageUrl} alt={title}/>
       </div>
 
-      <div className="mb-4">{introduction}</div>
+      
 
       {/* Render blog sections using ReactMarkdown */}
       {sections.map((section, index) => (

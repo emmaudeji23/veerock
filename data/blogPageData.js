@@ -11,7 +11,7 @@ export const blogPage = () => {
     blogs: [
         {
           title: "5 Sustainable Construction Practices for a Greener Future",
-          imageUrl: "url_to_image_1.jpg",
+          imageUrl: "/woman-eng-happy-ipad.jpg",
           category: "Construction",
           slug: "sustainable-construction-practices",
           introduction: "Discover how sustainable practices are reshaping the construction industry.",
@@ -47,7 +47,7 @@ export const blogPage = () => {
         },
         {
           title: "Creating Time-Saving Interior Designs with Smart Tech",
-          imageUrl: "url_to_image_2.jpg",
+          imageUrl: "/veerock/mural-wall.jpeg",
           category: "Interior Design",
           slug: "time-saving-interior-designs",
           introduction: "Explore how smart technology is revolutionizing interior design, saving time and enhancing spaces.",
@@ -83,7 +83,7 @@ export const blogPage = () => {
         },
         {
         title: "Innovative Solutions: Redefining Sustainable Construction",
-        imageUrl: "url_to_image_3.jpg",
+        imageUrl: "/engineer-man-ipad.jpg",
         category: "Construction",
         slug: "innovative-solutions-sustainable-construction",
         introduction: "Explore how innovative solutions are reshaping sustainable construction practices.",
@@ -120,7 +120,7 @@ export const blogPage = () => {
 
         {
             title: "The Future of Real Estate: Innovation, Comfort, and Timeless Value",
-            imageUrl: "url_to_image_4.jpg",
+            imageUrl: "/man-engineer-happy.jpg",
             category: "Real Estate",
             slug: "future-of-real-estate-innovation",
             introduction: "Explore how the real estate landscape is evolving, offering innovation, comfort, and lasting value.",
@@ -157,7 +157,7 @@ export const blogPage = () => {
         
             {
                 title: "Real Estate Today: Where Innovation Meets Comfort and Timeless Value",
-                imageUrl: "url_to_image_4.jpg",
+                imageUrl: "/engineer-pride.jpg",
                 category: "Real Estate",
                 slug: "real-estate-today-innovation-comfort",
                 introduction: "Explore the dynamic landscape of real estate, where innovation harmonizes with comfort and enduring value.",
@@ -194,7 +194,7 @@ export const blogPage = () => {
 
               {
                 title: "Redefining Efficiency: Saving Time and Budget Without Compromise",
-                imageUrl: "url_to_image_5.jpg",
+                imageUrl: "/woman-engineer-ipad.jpg",
                 category: "Construction",
                 slug: "redefining-efficiency-time-budget",
                 introduction: "Explore how our innovative solutions redefine efficiency, delivering results that exceed expectations.",
@@ -231,7 +231,7 @@ export const blogPage = () => {
 
               {
                 title: "Elevating Spaces: Where Innovation and Style Define Interior Design",
-                imageUrl: "url_to_image_7.jpg",
+                imageUrl: "/veerock/design_special4.jpeg",
                 category: "Interior Design",
                 slug: "elevating-spaces-interior-design",
                 introduction: "Embark on a journey into the realm of interior design, where innovation and style seamlessly converge.",
@@ -268,7 +268,7 @@ export const blogPage = () => {
 
               {
                 title: "Designing for Serenity: Interior Spaces that Inspire Calm",
-                imageUrl: "url_to_image_9.jpg",
+                imageUrl: "/veerock/palace1.jpeg",
                 category: "Interior Design",
                 slug: "designing-for-serenity-interior-spaces",
                 introduction: "Discover the art of creating serene interior spaces that offer a sanctuary from the chaos of the outside world.",
@@ -305,7 +305,7 @@ export const blogPage = () => {
 
               {
                 title: "Timeless Elegance: The Art of Architectural Design",
-                imageUrl: "url_to_image_8.jpg",
+                imageUrl: "/engineer-designing-.jpg",
                 category: "Architecture",
                 slug: "timeless-elegance-architectural-design",
                 introduction: "Step into a world where architectural design becomes a masterpiece, capturing the essence of timeless elegance.",
@@ -342,7 +342,7 @@ export const blogPage = () => {
 
               {
                 title: "Architectural Brilliance: Where Creativity Meets Eco-Smart Solutions",
-                imageUrl: "url_to_image_6.jpg",
+                imageUrl: "/veerock/construction_sky.jpeg",
                 category: "Architecture",
                 slug: "architectural-brilliance",
                 introduction: "Explore the world of architectural brilliance, where innovative designs harmonize with eco-smart solutions.",
@@ -379,7 +379,7 @@ export const blogPage = () => {
 
               {
                 title: "Crafting Dreams into Reality: Where Innovation Meets Construction",
-                imageUrl: "url_to_image_1.jpg",
+                imageUrl: "/man-engineer-ipad.jpg",
                 category: "Construction",
                 slug: "crafting-dreams-into-reality",
                 introduction: "Explore the journey from creative vision to tangible masterpiece with Veerock's innovative approach to construction.",
@@ -416,7 +416,7 @@ export const blogPage = () => {
 
               {
                 title: "Building the Future Today: Paving the Way for Sustainable Solutions",
-                imageUrl: "url_to_image_2.jpg",
+                imageUrl: "/veerock/worker2.jpeg",
                 category: "Construction",
                 slug: "building-the-future-today",
                 introduction: "Discover how Veerock is spearheading a greener and more innovative construction landscape, setting the stage for a sustainable future.",
@@ -453,7 +453,7 @@ export const blogPage = () => {
 
               {
                 title: "From Blueprints to Brilliance: Unveiling Architectural Marvels with Veerock",
-                imageUrl: "url_to_image_3.jpg",
+                imageUrl: "/veerock/designs_5.jpeg",
                 category: "Architecture",
                 slug: "from-blueprints-to-brilliance",
                 introduction: "Step into the realm of architectural innovation and masterful construction with Veerock. Embark on a journey from vision to breathtaking reality.",
@@ -490,7 +490,7 @@ export const blogPage = () => {
 
               {
                 title: "Where Sustainability Takes Shape: Building a Greener Tomorrow with Veerock",
-                imageUrl: "url_to_image_7.jpg",
+                imageUrl: "/veerock/mural-ceiling.jpeg",
                 category: "Sustainability",
                 slug: "where-sustainability-takes-shape",
                 introduction: "Delve into Veerock's dedicated journey towards eco-friendly practices and responsible construction, shaping a more sustainable future.",

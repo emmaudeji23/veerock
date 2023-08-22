@@ -1,8 +1,12 @@
-import React from 'react'
+import PageHeroBanner from '@/components/HeroBanner/PageHeroBanner'
+
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+      <PageHeroBanner bannerImg={`/welcome.jpg`} title='Contact Us' /> 
+      <div className="h-screen "></div>
+    </>
   )
 }
 

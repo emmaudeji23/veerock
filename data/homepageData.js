@@ -15,10 +15,10 @@ export const homepageData = () => {
         {
             heading: 'SMART TECHNOLOGY ON LOW BUDGET',
             description: "Contact Us For Your Building Projects",
-            button2Text: 'Get Quote',
+            button2Text: '',
             button1Text: 'Contact Us',
             image: '/engineer-man-office.jpg',
-            link2: '/quote',
+            link2: '#',
             link1: '/contact'
         },
         {
@@ -240,37 +240,37 @@ export const homepageData = () => {
             name: "Chiamaka Adekunle",
             title: "CEO, TechFusion Ltd.",
             content: "Veerock transformed our office space into a modern and functional environment that perfectly aligns with our company's image.",
-            imageUrl: "url_to_image_1.jpg"
+            imageUrl: "/myProfile.jpg"
           },
           {
             name: "Olumide Okafor",
             title: "Managing Director, EcoBuilders",
             content: "The waste-to-energy solution provided by Veerock not only reduced our operational costs but also significantly improved our environmental footprint.",
-            imageUrl: "url_to_image_2.jpg"
+            imageUrl: "/myProfile.jpg"
           },
           {
             name: "Nneka Okonkwo",
             title: "Founder, GreenTech Innovations",
             content: "Veerock's commitment to sustainability is truly remarkable. Their innovative solutions have set a new standard in the construction industry.",
-            imageUrl: "url_to_image_3.jpg"
+            imageUrl: "/myProfile.jpg"
           },
           {
             name: "Abdul Ibrahim",
             title: "Director, UrbanEstate Developments",
             content: "Working with Veerock was a pleasure from start to finish. Their attention to detail and quality craftsmanship are unmatched.",
-            imageUrl: "url_to_image_4.jpg"
+            imageUrl: "/myProfile.jpg"
           },
           {
             name: "Amina Bello",
             title: "Architect, A+ Designs",
             content: "Collaborating with Veerock on architectural projects has been inspiring. Their dedication to design excellence is evident in every project.",
-            imageUrl: "url_to_image_5.jpg"
+            imageUrl: "/myProfile.jpg"
           },
           {
             name: "Emeka Nwosu",
             title: "Hotel Manager, Oasis Retreat",
             content: "Veerock's eco-resort concept brought our vision to life. Our guests now enjoy a sustainable oasis that exceeds their expectations.",
-            imageUrl: "url_to_image_6.jpg"
+            imageUrl: "/myProfile.jpg"
           }
           // Add more testimonials as needed
         ],

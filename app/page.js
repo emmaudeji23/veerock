@@ -50,7 +50,7 @@ export default function Home() {
         <AdverSection2 content={advert2}/>
       </div>
       <div className="section-padding md:py-20">
-        <ClienteleSection clients={clients} />
+        {/* <ClienteleSection clients={clients} /> */}
       </div>
 
       <div className="section-padding py-20">

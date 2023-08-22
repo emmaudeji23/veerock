@@ -17,8 +17,6 @@ const Blogs = async ({params}) => {
   const isValidSlug = blogs.blogs.some((blog) => blog.slug.toLowerCase() === decodedSlug.toLowerCase());
 
 
-  console.log('pp==', params.slug, '---', decodedSlug, '====', isValidSlug)
-
 
   const blogPost = isValidSlug ? blogs.blogs.find((blog) => blog.slug.toLowerCase() === decodedSlug.toLowerCase()) : null;
   

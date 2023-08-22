@@ -29,7 +29,7 @@ const AboutSection = ({content}) => {
             </div>
 
             <div className="flex gap-6">
-               <Button variant={'primary'} link={'/about'}>Contact us</Button>
+               <Button variant={'primary'} link={'/contact'}>Contact us</Button>
                <Button variant={'secondary'} link={'/about'}>Learn more</Button>
             </div>
         </div>

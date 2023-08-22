@@ -1,12 +1,15 @@
-import React from 'react'
+import Breadcrumb from "../Layout/BreadCrumb"
 
-const PageHeroBanner = ({title, breadcomb}) => {
+const PageHeroBanner = ({title, bannerImg,}) => {
   return (
-    <div className='w-full text-white h-80 bg-blue-600 flex justify-center items-center'>
-        <div>
-            {title}
-        </div>
-    </div>
+    <div
+    className="flex relative text-white flex-col items-center justify-center h-96 bg-cover bg-center"
+    style={{ backgroundImage: `url(${bannerImg})` }}
+  >
+    <div className="absolute inset-0 bg-blue-900 opacity-70"></div>
+    <h1 className="text-2xl md:text-4xl z-10 font-semibold text-white mb-4">{title}</h1>
+    <Breadcrumb/>
+  </div>
   )
 }
 

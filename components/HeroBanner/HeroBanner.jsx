@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Button from '../Buttons/Button';
+import GetQuote from '../Buttons/GetQuote';
 
 const HeroBanner = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -44,7 +45,7 @@ const HeroBanner = ({ slides }) => {
               <p className=" mb-4 md:max-w-4xl  font-bold text-3xl sm:text-5xl md:text-7xl  ">{slide.description}</p>
               <div className="flex md: items-center space-x-4">
                 <Button link={slide.link1} variant={'primary'}>{slide.button1Text}</Button >
-                <Button link={slide.link2} variant={'secondary'}>{slide.button2Text}</Button>
+                {!slide.button2Text ? <GetQuote/> : <Button link={slide.link2} variant={'secondary'}>{slide.button2Text}</Button>}
               </div>
 
               </div>

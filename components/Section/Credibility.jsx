@@ -25,7 +25,7 @@ const Credibility = ({content}) => {
 
       <div className=" w-full grid sm:grid-cols-2 gap-1">
             {content[1]?.map(({heading, icon, description, slug})=> (
-                <Link href={`/blog/${slug}`} key={slug}>
+                <Link href={`#`} key={slug}>
                   <SimpleCard icon={icon} text={description} title={heading}/>
                 </Link>
             ))}
