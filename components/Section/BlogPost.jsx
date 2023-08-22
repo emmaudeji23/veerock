@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import ImageContainer from '../Cards/ImageContainer';
 import BlogPostComment from '../forms/BlogPostComment';
 import { useState } from 'react';
+import { FaHome, FaUser, FaFolder, FaCalendar,  FaHeart } from 'react-icons/fa';
 
 const BlogPost = ({blogPost}) => {
 
@@ -50,10 +51,10 @@ const [commentFormData, setCommentFormData] = useState({
       
       <div className="mb-4 font-semibold">{introduction}</div>
       <div className="flex mb-4 flex-wrap gap-4 justify-between w-full">
-      <p className='flex-shrink-0'>Author: {author}</p>
-      <p className='flex-shrink-0'>Date: {date}</p>
-      <p className='flex-shrink-0'>Likes: {likes}</p>
-      <p className='flex-shrink-0'>Category: {category}</p>
+      <p className='flex-shrink-0  flex items-center gap-1'><FaUser size={20}/> {author}</p>
+      <p className='flex-shrink-0  flex items-center gap-1'><FaCalendar size={20}/> {date}</p>
+      <p className='flex-shrink-0  flex items-center gap-1'><FaHeart size={20}/>  {likes}</p>
+      <p className='flex-shrink-0  flex items-center gap-1'><FaFolder size={20}/>  {category}</p>
       </div>
 
       <div className="h-[500px] w-full overflow-hidden pb-4">

@@ -12,7 +12,7 @@ const BlogList = ({filteredBlogs}) => {
       return <div>Loading...</div>; // You can replace this with a proper loading component
     }
   
-    const itemsPerPage = 8;
+    const itemsPerPage = 6;
     const { currentPage, paginate, currentItems } = usePagination(itemsPerPage);
     const paginatedBlogs = currentItems(filteredBlogs?.blogs);
 
