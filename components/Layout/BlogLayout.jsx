@@ -8,11 +8,11 @@ const BlogLayout = ({ children }) => {
 
     const existingCategories = [
         'All Blogs', // Add "All Blogs" to the list
-        'Construction',
-        'Energy',
-        'Project Management',
-        'Budgeting',
-        'News',
+        // 'Construction',
+        // 'Energy',
+        // 'Project Management',
+        // 'Budgeting',
+        // 'News',
     ];
 
   // Extract unique categories from the blogs data
@@ -35,7 +35,7 @@ const BlogLayout = ({ children }) => {
         <nav className="w-full bg-light200 lg:w-80 lg:py-8  max-lg:overflow-auto ">
             
             <ul  className=" w-full flex lg:flex-col lg:gap-4 gap-1 w-full p-4 lg:w-80 ">
-            {uniqueCategories.map((category, index) => (
+            {allCategories.map((category, index) => (
                 <Link href={`/blogs/${category}`} key={index} className="bg-light300 hover:ring hover:ring-yellow-500 duration-300 flex-shrink-0 p-4">
                     {category}
                 </Link>

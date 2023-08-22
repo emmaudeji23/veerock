@@ -19,13 +19,13 @@ const BlogList = ({filteredBlogs}) => {
   return (
     <div>
       <div className="">
-        {filteredBlogs.category && <p className="text-red-400 pb-2" >Category does not exist</p>}
+        {!filteredBlogs.category && <p className="text-red-400 pb-2" >Category does not exist</p>}
       <h1 className="text-2xl font-semibold mb-4">
           {filteredBlogs.category ? `Blogs in ${filteredBlogs.category}` : 'All Blogs'}
           </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-        {!filteredBlogs?.blogs.length() ? (<p className="flex justify-center items-center w-full h-full text-xl font-medium">No blog post listed</p>) :
+        {!filteredBlogs?.blogs.length ? (<p className="flex justify-center items-center w-full h-full text-xl font-medium">No blog post listed</p>) :
         paginatedBlogs?.map((blog, index) => (
           <BlogCard key={index} {...blog} />
         ))}

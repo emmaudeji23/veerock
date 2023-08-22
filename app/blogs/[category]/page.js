@@ -11,18 +11,19 @@ const Blogs = async ({params}) => {
   
   const {blogs} =  blogPage();
   const category  = params.category;
+  const decodedCategory = decodeURIComponent(category);
 
   // Check if the category is valid and not null, a number, or any non-string value
-  const isValidCategory = blogs.blogs.some((blog) => blog.category.toLowerCase() === category.toLowerCase());
+  const isValidCategory = blogs.blogs.some((blog) => blog.category.toLowerCase() === decodedCategory.toLowerCase());
 
 
-  // console.log('pp==', params.category, '====', isValidCategory)
+  console.log('pp==', params.category, '---', decodedCategory, '====', isValidCategory)
 
 
   const categoryBlogs = {
-    category: isValidCategory ? category : null,
+    category: isValidCategory ? decodedCategory : null,
     blogs: isValidCategory 
-        ? blogs.blogs.filter((blog) => blog.category.toLowerCase() === category.toLowerCase())
+        ? blogs.blogs.filter((blog) => blog.category.toLowerCase() === decodedCategory.toLowerCase())
         : blogs.blogs, // Show all blogs
   };
   
