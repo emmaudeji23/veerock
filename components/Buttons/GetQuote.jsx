@@ -12,7 +12,7 @@ const GetQuote = () => {
     modalType,} = useGlobalState();
 
   return (
-    <button onClick={()=>openModal('central')} className="bg-yellow-400 hover:bg-yellow-500 duration-300 py-4 px-4 text-center rounded flex gap-2 items-center text-black">
+    <button onClick={()=>openModal('quote')} className="bg-yellow-400 hover:bg-yellow-500 duration-300 py-4 px-4 text-center rounded flex gap-2 items-center text-black">
                 Get Quote <PiArrowSquareInBold size={20}/>
               </button>
   )

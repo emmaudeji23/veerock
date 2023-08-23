@@ -12,7 +12,7 @@ const ProjectDetails = ({isOpen, item, onClose}) => {
     
   return (
     <ModalCentral isOpen={isOpen} onClose={onClose}>
-        <div className="m-auto h-[90vh] bg-light200 max-w-8xl gap-2 flex flex-col">
+        <div className="w-screen m-6 md:w-[760px] lg:w-[1000px] h-[90vh] bg-light200 max-w-8xl gap-2 flex flex-col">
             <div className="w-full h-[86%] gap-2 flex flex-col lg:flex-row">
                 <div className="w-full h-full lg:w-4/5 overflow-hidden relative ">
                     <ImageContainer img={show} alt={item.name} />

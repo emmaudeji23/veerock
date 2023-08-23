@@ -13,24 +13,23 @@ const QuoteModal = ({ item, }) => {
     closeModal,
     isModalOpen,
     modalType,} = useGlobalState();
-
-    // const [show, setShow] = useState(item?.imageUrl[0])
-    // useEffect(() => {
-    //   setShow(item?.imageUrl[0])
-    
-    // }, [item])
     
   return (
-    <ModalCentral isOpen={isModalOpen} onClose={closeModal}>
-        <div className=" mx-auto h-[90vh] bg-light200 max-w-[400px]  gap-4 flex flex-col ">
+    <>
+       {modalType === 'quote' && <ModalCentral isOpen={isModalOpen} onClose={closeModal}>
+        <div  className="w-screen m-4 md:w-[500px] h-[90vh] bg-light200 gap-4 flex flex-col ">
+            
+            <button onClick={closeModal} className="flex m-4 w-8 p-3 hover-yellow">x</button>
+
             <div className='w-full'>
-            <div onClick={closeModal} className="flex w-8 p-3 hover-yellow">x</div>
+            <h3 className='text-4xl font-bold text-center w-full' >Quote</h3>
 
             </div>
-            <h3 className='text-4xl font-bold text-center w-full' >Quote</h3>
-           
+
         </div>
-    </ModalCentral>
+    </ModalCentral>}
+    </>
+   
   )
 }
 

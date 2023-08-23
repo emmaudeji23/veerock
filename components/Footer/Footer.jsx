@@ -12,8 +12,11 @@ const Footer = () => {
       <div className=" py-12 section-padding ">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="text-white xl:col-span-1">
-                <Image src={'/logo.png'} width={80} height={50} alt='logo'/>
-            <p className="w-1/2 mt-2 text-sm text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+            <p className="text-blue-600 font-semibold text-2xl">Veerock</p>
+                {/* <Image src={'/logo.png'} width={80} height={50} alt='logo'/> */}
+            <p className="w-1/2 mt-2 text-sm text-gray-500">
+            From towering architectural marvels to intricate interior designs, each endeavor is meticulously executed, showcasing our dedication to impeccable craftsmanship.
+            </p>
           </div>
           <div className="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
