@@ -6,6 +6,7 @@ import GlobalStateProvider from '@/context/GlobalStateProvider';
 import { useDarkmode } from '@/utils/useDarkmode';
 import FloatingNavbar from '../FloatingNavBar';
 import QuoteModal from '../Modal/QuoteModal';
+import Seo from './Seo';
 
 
 const Layout = ({ children }) => {
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
 
   return (
     <GlobalStateProvider>
+      <Seo/>
       {
         bgLightnessLoaded && <div className={`transition bg-light100 text-dark100 `}>
         <QuoteModal/>
