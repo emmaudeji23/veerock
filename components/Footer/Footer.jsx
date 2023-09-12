@@ -12,8 +12,8 @@ const Footer = () => {
       <div className=" py-12 section-padding ">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="text-white xl:col-span-1">
-            <p className="text-blue-600 font-semibold text-2xl">Veerock</p>
-                {/* <Image src={'/logo.png'} width={80} height={50} alt='logo'/> */}
+            {/* <p className="text-blue-600 font-semibold text-2xl">Veerock</p> */}
+                <Link href={'#'}><Image src={'/logo1.png'} width={150} height={50} alt='logo'/></Link>
             <p className="w-1/2 mt-2 text-sm text-gray-500">
             From towering architectural marvels to intricate interior designs, each endeavor is meticulously executed, showcasing our dedication to impeccable craftsmanship.
             </p>

@@ -17,9 +17,9 @@ const MobileNav = () => {
     <div className=' relative z-20 text-dark200 '>
         
        { showSidebar && 
-       <nav className="fixed animate-slide-in flex -z-10 top-20 bottom-0 left-0 w-full ">
+       <nav className="fixed animate-slide-in flex -z-10 top-0  bottom-0 left-0 w-full ">
           <div onClick={()=>setShowSidebar(false)} className="empty-space w-full h-full"></div>
-          <div className='bg-light200 shadow-2xl '>
+          <div className='bg-light200 shadow-2xl pt-20'>
             <div className="grid gap-3  pr-4 pl-12 py-6 ">
                     {
                         navLinks?.map(({title, href}) => (
@@ -49,12 +49,12 @@ const MobileNav = () => {
           </div>
         </nav>
         }
-        <div className="bg-light200 shadow-sm z-20 section-padding py-4 flex justify-between">
+        <div className="fixed w-full bg-light200 shadow-sm z-50 section-padding py-4 flex justify-between">
 
-            <Link href={'/'} className=" flex  flex-shrink-0 ">
+            <Link href={'/'} className=" flex  flex-shrink-0 " onClick={()=>setShowSidebar(false)}>
                 <Image
-                    width={90} height={45}
-                    src="/logo.png"
+                    width={110} height={45}
+                    src="/logo1.png"
                     alt="Logo"
                   />
             </Link> 

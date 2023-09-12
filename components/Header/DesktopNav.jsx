@@ -20,12 +20,12 @@ const DesktopNav = ({themeBtn}) => {
         <div className="section-padding flex justify-between items-center ">
 
             <Link href={'/'} className=" flex  flex-shrink-0 text-2xl text-blue-600 font-semibold ">
-              Veerock
-                {/* <Image
-                    width={90} height={45}
-                    src="/logo.png"
+              
+                <Image
+                    width={150} height={45}
+                    src="/logo1.png"
                     alt="Logo"
-                  /> */}
+                  />
             </Link> 
 
             <div className="flex items-center space-x-10">
