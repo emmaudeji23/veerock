@@ -4,6 +4,7 @@ import Link from "next/link";
 import SimpleCard from "../Cards/SimpleCard";
 import {FaLongArrowAltRight} from 'react-icons/fa'
 import PlainBtn from "../Buttons/PlainBtn";
+import CredibilityBlocks from "./CredibilityBlocks";
 
 
 const Credibility = ({content}) => {
@@ -23,13 +24,7 @@ const Credibility = ({content}) => {
             </div>
       </div>
 
-      <div className=" w-full grid sm:grid-cols-2 gap-1">
-            {content[1]?.map(({heading, icon, description, slug})=> (
-                <Link href={`#`} key={slug}>
-                  <SimpleCard icon={icon} text={description} title={heading}/>
-                </Link>
-            ))}
-      </div>
+      <CredibilityBlocks content={content[1]}/>
     </div>
   );
 };

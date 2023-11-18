@@ -6,7 +6,7 @@ const Heading = ({title, white, type, heading, styled}) => {
         
         <div className={`space-y-1 col-span-9 ${white && "text-white"} `}>
             <h6 className="text-xl font-semibold text-light300">{title}</h6>
-            <h3 className="text-4xl font-semibold">
+            <h3 className="capitalize text-4xl font-semibold">
             {heading} <span className="text-yellow-500">{styled}</span>
             </h3>
         </div>

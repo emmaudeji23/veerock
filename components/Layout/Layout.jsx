@@ -7,6 +7,7 @@ import { useDarkmode } from '@/utils/useDarkmode';
 import FloatingNavbar from '../FloatingNavBar';
 import QuoteModal from '../Modal/QuoteModal';
 import Seo from './Seo';
+import ModalCentral from '../Modal/ModalCentral';
 
 
 const Layout = ({ children }) => {
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
       {
         bgLightnessLoaded && <div className={`transition bg-light100 text-dark100 `}>
         <QuoteModal/>
+        <ModalCentral/>
         <Navigation themeBtn={themeBtn}/>
         <FloatingNavbar  themeBtn={themeBtn}/>
           {children}

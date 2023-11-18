@@ -39,3 +39,7 @@ These Terms of Service shall be governed and construed in accordance with the la
 ## Changes to the Terms:
 
 We reserve the right, at our sole discretion, to modify or replace these Terms at any time. The effective date of the revised Terms will be posted on this page. Your continued use of the Site after any such changes will constitute your acceptance of the updated Terms.
+
+## Changes to the Terms:
+Engr. Vitalis Obi
+MD/CEO. Veerock Construction Company Ltd.

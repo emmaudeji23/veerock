@@ -111,7 +111,7 @@ a {
 }
 
 .bg-blue{
-  @apply bg-blue-600
+  @apply text-white bg-blue-600
 }
 
 .text-blue{

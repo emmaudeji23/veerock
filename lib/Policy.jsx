@@ -1,10 +1,18 @@
+import { useGlobalState } from "@/context/GlobalStateContext"
+import { FaRegTimesCircle,  } from "react-icons/fa"
 
 
 const Policy = () => {
+  const {closeModal} = useGlobalState()
   return (
    
-<div className="p-6">
+<div className="p-6 py-12 bg-light100 max-w-6xl overflow-auto h-screen relative">
+
+ <div className="flex justify-between gap-6 w-full">
     <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
+    <button onClick={closeModal} className="text-xl hover:shadow-lg duration-300 "><FaRegTimesCircle /></button>
+  </div>
+
     <p className="mb-2"><em>Effective Date: August 4th, 2023</em></p>
     <p className="mb-4">Veerock Construction Company ("we," "us," or "our") operates the website <a href="https://www.veerock.com" className="text-blue-500">www.veerock.com</a> (the "Site"). This Privacy Policy informs you of our policies regarding the collection, use, and disclosure of Personal Information we receive from users of the Site.</p>
 

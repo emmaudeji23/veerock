@@ -1,14 +1,14 @@
 import { useGlobalState } from "@/context/GlobalStateContext"
 import { FaRegTimesCircle } from "react-icons/fa"
 
-const Terms = () => {
+const CeoLetter = () => {
   const {closeModal} = useGlobalState()
   return (
    
 <div className="p-6 py-12 bg-light100 max-w-6xl overflow-auto h-screen relative">
   
   <div className="flex justify-between gap-6 w-full">
-    <h1 className="text-3xl font-bold mb-4">Terms of Service</h1>
+    <h1 className="text-3xl font-bold mb-4">Our Promise to You</h1>
     <button onClick={closeModal} className="text-xl hover:shadow-lg duration-300 "><FaRegTimesCircle /></button>
   </div>
 
@@ -48,4 +48,4 @@ const Terms = () => {
   )
 }
 
-export default Terms
+export default CeoLetter

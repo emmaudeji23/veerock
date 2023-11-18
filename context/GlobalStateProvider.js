@@ -22,6 +22,7 @@ const GlobalStateProvider = ({ children }) => {
 
   const closeModal = () => {
     setIsModalOpen(false);
+    setModalType('');
   };
 
   

@@ -1,20 +1,30 @@
+import { useGlobalState } from "@/context/GlobalStateContext";
+import CeoLetter from "@/lib/CeoLetter";
+import Policy from "@/lib/Policy";
+import Terms from "@/lib/Terms";
 
 
-const ModalCentral = ({ isOpen, onClose, children }) => {
+const ModalCentral = ({ children, }) => {
   const stopPropagation = (e) => {
     e.stopPropagation();
   };
 
-  return (
-      <>
-        { isOpen && <div  onClick={onClose}  className={`fixed inset-0 flex items-center justify-center z-50 '}`}>
-            <div className="absolute inset-0 bg-gray-900 opacity-75"></div>
-              <div onClick={stopPropagation} className=" flex items-center justify-center shadow-lg animate-slow-appear z-10">
-                {children}
-              </div>
-          </div>}
+  const {closeModal, modalType} = useGlobalState()
 
-      </>
+  return (
+
+      <div  onClick={closeModal}  className={` ${  modalType   ? 'fixed scale-100 bg-opacity-50' : 'scale-0 bg-transparent-100 absolute'} transform transition-transform duration-500 inset-0  z-50 bg-black flex items-center justify-center`}>
+       
+          <div onClick={stopPropagation} className="  ">
+            {children ? children : 
+              <>
+               { modalType === 'policy' && <Policy/>}
+               { modalType === 'ceo' && <CeoLetter/>}
+               { modalType === 'terms' && <Terms/>}
+              </>
+            }
+          </div>
+      </div>
    
   );
 };

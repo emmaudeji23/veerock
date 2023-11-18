@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { FaQuoteLeft } from 'react-icons/fa'
 
@@ -5,7 +6,7 @@ const ImageCard = ({imgUrl, component}) => {
   return (
     <div className='h-full relative pt-14'>
       <div className="img h-[370px] w-[94%] absolute left-[6%] right-0 bg-red-400 top-0">
-        <img src={imgUrl} alt="veerock-img" className='object-cover w-full h-full'/>
+        <Image width={400} height={400} src={imgUrl} alt="veerock-img" className='object-cover w-full h-full'/>
 
       </div>
 
