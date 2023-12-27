@@ -1,3 +1,4 @@
+import { contactlinks } from '@/data/contactlinks';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import Link from 'next/link';
@@ -12,19 +13,20 @@ const Navigation = ({themeBtn}) => {
                <div className="">
                   <div className=" flex gap-4 items-center ">
                       <p className='flex items-center gap-2'>
-                        <FaMapMarkerAlt/> #5 MCC road, Ikenegbu Layout Owerri
+                        <FaMapMarkerAlt/> {contactlinks?.address}
                       </p>
-                      <a href="mailto:veerock@gmail.com" className='flex gap-2 items-center'>
-                        <FaRegEnvelope/> veerock@gmail.com
+                      <a href={`mailto:${contactlinks?.email}`}className='flex gap-2 items-center'>
+                        <FaRegEnvelope/> {contactlinks?.email}
                       </a>
                   </div>
                </div>
-               <div className="">
+               <div className="flex gap-4 items-center">
+                  <div className="h-6 w-6 flex justify-center items-center rounded-full bg-yellow-5 text-xl">{themeBtn}</div>
                   <div className='w-full flex '>
-                      <Link href="https://facebook.com/veerock" className='flex bg-blue-700 items-center px-4'> <FaFacebookF/></Link>
-                      <Link href="https://instagram.com/veerock" className='flex bg-red-600 items-center px-4'> <FaInstagram/></Link>
-                      <Link href="https://linkedin.com/in/emmanuel-udeji" className='flex bg-blue-800 items-center px-4'> <FaLinkedinIn/></Link>
-                      <a href="tel:+2348032787601" className='flex gap-2 py-2 px-4 bg-yellow-500 text-black ' > <FaPhone/> +2348032787601</a>
+                      <Link href={contactlinks?.facebook} className='flex bg-blue-700 items-center px-4'> <FaFacebookF/></Link>
+                      <Link href={contactlinks?.instagram}  className='flex bg-red-600 items-center px-4'> <FaInstagram/></Link>
+                      <Link href={contactlinks?.linkedIn}  className='flex bg-blue-800 items-center px-4'> <FaLinkedinIn/></Link>
+                      <a href="tel:+2348032787601" className='flex gap-2 py-2 px-4 bg-yellow-500 text-black ' > <FaPhone/> {contactlinks?.phonenumber}</a>
                   </div>
                </div>
             </div>
@@ -34,7 +36,7 @@ const Navigation = ({themeBtn}) => {
           <DesktopNav themeBtn={themeBtn}/>
         </div>
         <div className="block md:hidden">
-          <MobileNav/>
+          <MobileNav themeBtn={themeBtn}/>
         </div>
     
     </>

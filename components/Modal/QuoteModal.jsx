@@ -3,33 +3,138 @@ import { useEffect, useState } from 'react'
 import ImageContainer from '../Cards/ImageContainer'
 import ModalCentral from './ModalCentral'
 import { useGlobalState } from '@/context/GlobalStateContext'
+import { homepageData } from '@/data/homepageData'
+import { FaRegTimesCircle } from 'react-icons/fa'
+import Button from '../Buttons/Button'
 
+const QuoteModal = ({  isOpen, onClose }) => {
+  const {projectsPortfolio} = homepageData()
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    projectType: '',
+    selectedPortfolioItem: null,
+  });
 
-const QuoteModal = ({ item, }) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
 
+  const handlePortfolioItemChange = (e) => {
+    const selectedItem = projectsPortfolio?.items?.find((item) => item.name === e.target.value);
+    setFormData((prevData) => ({ ...prevData, selectedPortfolioItem: selectedItem }));
+  };
 
-  const {
-    openModal,
-    closeModal,
-    isModalOpen,
-    modalType,} = useGlobalState();
-    
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Implement your form submission logic here
+    console.log('Form Data:', formData);
+  };
+
+   // Extract unique project types (categories) from portfolioData
+   const projectTypes = ['Select a project type', ...new Set(projectsPortfolio?.items?.map((item) => item.category))];
+
   return (
-    <>
-       {modalType === 'quote' && <ModalCentral isOpen={isModalOpen} onClose={closeModal}>
-        <div  className="w-screen m-4 md:w-[500px] h-[90vh] bg-light200 gap-4 flex flex-col ">
-            
-            <button onClick={closeModal} className="flex m-4 w-8 p-3 hover-yellow">x</button>
+    // <div className={`${isOpen ? ' scale-100' : 'scale-0'} fixed transform transition-transform duration-500 inset-0 z-50 flex items-center bg-black bg-opacity-70`} onClick={onClose}>
 
-            <div className='w-full'>
-            <h3 className='text-4xl font-bold text-center w-full' >Quote</h3>
+      <div onClick={e=>e.stopPropagation()} className="relative mx-auto max-w-[500px]  h-full overflow-y-auto bg-light200 px-4 py-8 ">
+      <FaRegTimesCircle size={20} onClick={onClose} className='absolute top-4 right-4'/>
 
-            </div>
+      <h2 className="text-2xl font-semibold mb-4">Request a Quote</h2>
+      <form className='' onSubmit={handleSubmit}>
 
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-600">Name</label>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            className="w-full p-2 border rounded-md"
+            required
+          />
         </div>
-    </ModalCentral>}
-    </>
-   
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-600">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full p-2 border rounded-md"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-600">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="w-full p-2 border rounded-md"
+            required
+          />
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-600">Project Type</label>
+          <select
+            name="projectType"
+            value={formData.projectType}
+            onChange={handleChange}
+            className="w-full p-2 border rounded-md"
+            required
+          >
+            {projectTypes.map((type, index) => (
+              <option key={index} value={type}>
+                {type}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-600">Select Portfolio Item</label>
+          <select
+            name="selectedPortfolioItem"
+            value={formData.selectedPortfolioItem?.name || ''}
+            onChange={handlePortfolioItemChange}
+            className="w-full p-2 border rounded-md"
+            required
+          >
+            <option value="" disabled>Select an item</option>
+            {projectsPortfolio?.items?.map((item, index) => (
+              <option key={index} value={item.name}>
+                {item.name}
+              </option>
+            ))}
+          </select>
+        </div>
+        {formData.selectedPortfolioItem && (
+          <div className="mb-4">
+            <h3 className="text-lg font-semibold mb-2">Selected Portfolio Item:</h3>
+            <p className="text-sm text-gray-600">
+              <strong>Name:</strong> {formData.selectedPortfolioItem.name}
+            </p>
+            <p className="text-sm text-gray-600">
+              <strong>Description:</strong> {formData.selectedPortfolioItem.description}
+            </p>
+          </div>
+        )}
+        <div className="flex justify-center">
+          <button variant={'primary'} link={'#'}
+            type="submit"
+            className="hover-blue rounded py-3 px-5"
+          >
+            Submit Quote Request
+          </button >
+        </div>
+      </form>
+      </div>
+    // </div>
   )
 }
 

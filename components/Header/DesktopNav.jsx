@@ -8,16 +8,17 @@ import ModalSearchBox from '../Modal/ModalSearchBox';
 import Image from "next/image";
 import {PiArrowSquareInBold} from 'react-icons/pi'
 import GetQuote from "../Buttons/GetQuote";
+import { usePathname } from "next/navigation";
 
 
 const DesktopNav = ({themeBtn}) => {
 
   const{isModalOpen, active, setActive, closeModal, openModal, modalType} = useGlobalState()
+  const pathname=usePathname()
 
-
-  return (
+return (
     <div className=' bg-light200 text-dark200 '>
-        <div className="section-padding flex justify-between items-center ">
+        <div className="section-padding flex justify-between items-center h-24">
 
             <Link href={'/'} className=" flex  flex-shrink-0 text-2xl text-blue-600 font-semibold ">
               
@@ -33,7 +34,7 @@ const DesktopNav = ({themeBtn}) => {
                 navLinks?.map(({title, href} )=> (
                     <Link key={title} href={href}
                     onClick={()=>setActive(title)}
-                      className={`py-6 border-b-4 hover:border-b-4 hover:border-yellow-400 duration-300 ${active===title ? 'border-b-4 border-yellow-400' : null}`}
+                      className={`py-6 hover:border-b-4 hover:border-yellow-400 duration-300 ${pathname === href ? 'border-b-4 border-yellow-400' : null}`}
                     >
                         {title}
                     </Link>

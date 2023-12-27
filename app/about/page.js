@@ -9,6 +9,7 @@ import ServicesSection from "@/components/Section/ServicesSection"
 import { about } from "@/data/about"
 import { blogPage } from "@/data/blogPageData"
 import { homepageData } from "@/data/homepageData"
+import { imgSrc } from "@/data/imgsrc"
 
 const About = () => {
   const { headline, credibility, aboutSection, servicesSection, howItWorks, projectsPortfolio, advert1, testimonialsData, advert2  } = homepageData()
@@ -20,7 +21,7 @@ const About = () => {
 
   return (
     <>
-      <PageHeroBanner bannerImg={`/helmet.jpg`} title='About Our Company' /> 
+      <PageHeroBanner bannerImg={imgSrc?.aboutushero} title='About Our Company' /> 
 
       <div className="section-padding py-20">
         <Banner1 content={heading}/>
@@ -44,11 +45,7 @@ const About = () => {
 
       <div className="section-padding py-20">
         <BlogSection content={blogs}/>
-      </div>
-
-      <div className="section-padding py-20">
-        <NewsLetter content={blogs}/>
-      </div>
+      </div>    
     </>
   )
 }

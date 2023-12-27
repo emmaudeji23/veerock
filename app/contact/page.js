@@ -1,10 +1,11 @@
 import PageHeroBanner from '@/components/HeroBanner/PageHeroBanner'
+import { imgSrc } from '@/data/imgsrc'
 
 
 const Contact = () => {
   return (
     <>
-      <PageHeroBanner bannerImg={`/welcome.jpg`} title='Contact Us' /> 
+      <PageHeroBanner bannerImg={imgSrc.contactushero} title='Contact Us' /> 
       <div className="h-screen "></div>
     </>
   )

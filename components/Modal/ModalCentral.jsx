@@ -2,9 +2,12 @@ import { useGlobalState } from "@/context/GlobalStateContext";
 import CeoLetter from "@/lib/CeoLetter";
 import Policy from "@/lib/Policy";
 import Terms from "@/lib/Terms";
+import QuoteModal from "./QuoteModal";
+import ProjectDetails from "./ProjectDetails";
 
 
 const ModalCentral = ({ children, }) => {
+  
   const stopPropagation = (e) => {
     e.stopPropagation();
   };
@@ -13,7 +16,7 @@ const ModalCentral = ({ children, }) => {
 
   return (
 
-      <div  onClick={closeModal}  className={` ${  modalType   ? 'fixed scale-100 bg-opacity-50' : 'scale-0 bg-transparent-100 absolute'} transform transition-transform duration-500 inset-0  z-50 bg-black flex items-center justify-center`}>
+      <div  onClick={closeModal}  className={` ${  modalType   ? ' scale-100 ' : 'scale-0  '}  fixed transform transition-transform duration-500 inset-0  z-50 bg-black bg-opacity-50 flex items-center justify-center`}>
        
           <div onClick={stopPropagation} className="  ">
             {children ? children : 
@@ -21,11 +24,11 @@ const ModalCentral = ({ children, }) => {
                { modalType === 'policy' && <Policy/>}
                { modalType === 'ceo' && <CeoLetter/>}
                { modalType === 'terms' && <Terms/>}
+               {modalType === 'quote' && <QuoteModal onClose={closeModal}/>}
               </>
             }
           </div>
       </div>
-   
   );
 };
 

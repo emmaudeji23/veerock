@@ -4,6 +4,7 @@ import { Poppins } from 'next/font/google'
 import { description } from '@/lib/description'
 import Layout from '@/components/Layout/Layout'
 import { url } from '../data/url'
+import ReactWhatsapp from '@/components/ReactWhatsapp'
 
 // const poppins = Poppins({ subsets: ['latin'] })
 

@@ -13,10 +13,10 @@ const BlogCard = ({ title, imageUrl, category, introduction, slug }) => {
         <div className="overflow-hidden w-full h-56 ">
             <ImageContainer img={imageUrl} alt={title}/>
         </div>
-        <div className="p-6 flex flex-col h-[250px] justify-between gap-4">
+        <div className="p-6 flex flex-col h-[230px] justify-between gap-4">
             <div className="space-y-2">
                 <h2 className="text-xl font-semibold mb-2">{title}</h2>
-                <p className="text-gray-600 mb-3">{introduction}</p>
+                <p className="text-dark300 mb-3">{introduction}</p>
             </div>
             <div className="flex justify-between items-center">
                

@@ -14,11 +14,15 @@ const Button = ({ children, link, variant }) => {
   };
 
   return (
-    <Link href={link}
-      className={`px-4 sm:px-6 py-2 sm:py-3 rounded transition-colors duration-300 ${getButtonStyle()}`}
+    <button className={`flex rounded transition-colors duration-300 ${getButtonStyle()}`}>
+       <Link href={link}
+      className='px-4 sm:px-6 py-2 sm:py-3 '
     >
       {children}
     </Link>
+
+    </button>
+   
   );
 };
 

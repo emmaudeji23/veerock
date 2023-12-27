@@ -11,7 +11,6 @@ const GlobalStateProvider = ({ children }) => {
 
   useEffect(() => {
     setShowSidebar(false)
-    
   }, [active])
   
   
@@ -38,11 +37,9 @@ const GlobalStateProvider = ({ children }) => {
     openModal,
     closeModal,
     isModalOpen,
-    modalType,
+    modalType,setModalType,
     active,
     setActive
-    
-
   };
 
   return (

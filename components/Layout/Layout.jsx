@@ -8,6 +8,7 @@ import FloatingNavbar from '../FloatingNavBar';
 import QuoteModal from '../Modal/QuoteModal';
 import Seo from './Seo';
 import ModalCentral from '../Modal/ModalCentral';
+import ReactWhatsapp from '../ReactWhatsapp';
 
 
 const Layout = ({ children }) => {
@@ -19,10 +20,10 @@ const Layout = ({ children }) => {
       <Seo/>
       {
         bgLightnessLoaded && <div className={`transition bg-light100 text-dark100 `}>
-        <QuoteModal/>
         <ModalCentral/>
+        <ReactWhatsapp/>
         <Navigation themeBtn={themeBtn}/>
-        <FloatingNavbar  themeBtn={themeBtn}/>
+        {/* <FloatingNavbar  themeBtn={themeBtn}/> */}
           {children}
         <Footer/>
       </div>

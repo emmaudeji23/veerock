@@ -19,8 +19,6 @@ const ProjectSection = ({content}) => {
      setShowProjectDetails(false)
     }, [])
     
-    
-    console.log(showProjectDetails)
   return (
     <div >
         <div className=" pb-14  sm:flex justify-between items-center">
@@ -31,25 +29,21 @@ const ProjectSection = ({content}) => {
         </div>
         <div className="pb-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {
-                content.items.map((item, i) => (
-                    <>
-                        <div key={i} onClick={()=>handleClick(item)}>
-                            <ImageCard imgUrl={item.imageUrl[0]} component={
-                            <p className="flex justify-between items-center">
-                                <p>{item.name}</p>
-                                <p className="flex gap-1 items-center">{item.imageUrl.length} <MdPhotoLibrary size={20}/></p>
-                            
-                            </p>}/>
-                        </div>
-                       
-                </>
+                content?.items?.map((item, i) => (
+                    <div key={i} onClick={()=>handleClick(item)}>
+                        <ImageCard imgUrl={item.imageUrl[0]} component={
+                        <div className="flex justify-between items-center">
+                            <p>{item.name}</p>
+                            <p className="flex gap-1 items-center">{item.imageUrl.length} <MdPhotoLibrary size={20}/></p>
+                        </div>}/>
+                    </div>
                 ))
             }
         </div>
         <Button link='/projects' variant={'primary'}>Vew All Projects</Button>
     
-            
-        {showProjectDetails && <ProjectDetails item={items}  isOpen={showProjectDetails} onClose={()=>setShowProjectDetails(false)}/>}
+        <ProjectDetails item={items} onClose={()=>setShowProjectDetails(false)} isOpen={showProjectDetails}/>
+        
     </div>
   )
 }
