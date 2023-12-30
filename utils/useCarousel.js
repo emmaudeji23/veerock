@@ -37,14 +37,14 @@ const Carousel = ({list}) => {
     <div className="pt-8 pb-2 relative flex items-center ">
       
         <div className=' min-h-80 text-lg w-full px-8 '>        
-            <div className='text-yellow-500 pb-8'>
-              <FaQuoteLeft size={60} />
+            <div className='text-yellow-500 pb-28'>
+              {/* <FaQuoteLeft size={60} /> */}
             </div>
               <div className="">{content}</div>
               <div className="mt-8 flex items-center gap-4">
-                <div className="h-20 w-20 overflow-hidden">
+                {/* <div className="h-20 w-20 overflow-hidden">
                   <img src={imageUrl} alt={name} />
-                </div>
+                </div> */}
                 <div className="">
                   <h1 className='text-xl font-semibold'>{name}</h1>
                   <h4 className='text-zinc-500'>{title}</h4>

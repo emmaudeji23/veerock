@@ -50,7 +50,7 @@ const TestimonialSection = ({content}) => {
                 <p className="text-3xl font-semibold pb-2">
                     {content.ads2}
                 </p>
-                <PlainBtn text={'View Projects'} link={'/about'} />
+                <PlainBtn text={'View Projects'} link={'/projects'} />
                 </div>
             </div>
         </div>
