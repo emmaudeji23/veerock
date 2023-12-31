@@ -29,7 +29,7 @@ const Newsletter = () => {
           placeholder="email@email.com"
           required
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full bg-transparent p-3"
+          className="w-full bg-transparent p-3 border border-light100"
         />
         <button type="submit" className="bg-blue-600 text-white text-2xl p-3">
           <FaTelegramPlane />

@@ -16,16 +16,16 @@ const Values = ({content}) => {
             <p className="text-lg">{content?.description}</p>
 
             <div className="space-y-6">
-                <button onClick={()=>openModal('policy')} className='w-full p-4 border border-zinc-500 flex justify-between items-center'>
-                    <p>View Our Company Policy</p>
-                    <FaPlus/>
-                </button>
-                <button onClick={()=>openModal('terms')}  className='w-full p-4 border border-zinc-500 flex justify-between items-center'>
-                    <p>Our Promise To You.</p>
+                <button onClick={()=>openModal('vision')} className='w-full p-4 border border-zinc-500 flex justify-between items-center'>
+                    <p>Who we are</p>
                     <FaPlus/>
                 </button>
                 <button onClick={()=>openModal('ceo')}  className='w-full p-4 border border-zinc-500 flex justify-between items-center'>
                     <p>Our Promise To You.</p>
+                    <FaPlus/>
+                </button>
+                <button onClick={()=>openModal('policy')}  className='w-full p-4 border border-zinc-500 flex justify-between items-center'>
+                    <p>Our Policy Guide</p>
                     <FaPlus/>
                 </button>
             </div>

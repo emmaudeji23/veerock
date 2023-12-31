@@ -4,7 +4,7 @@ export const contactlinks = {
     facebook: "#",
     instagram: "#",
     linkedIn: "#",
-    address: "#128 Okigwe road, Owerri.",
+    address: "128 Okigwe road, Owerri.",
     slogan: ``,
     phonenumber2:`+13467449259`
 }

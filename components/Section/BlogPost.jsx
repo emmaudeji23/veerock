@@ -11,6 +11,8 @@ const BlogPost = ({blogPost}) => {
 
 const { title, imageUrl, category, introduction, sections, conclusion, cta, author, date, likes, comments } = blogPost
 
+const [commentlist, setCommentlist] = useState(comments)
+
 
 const [commentFormData, setCommentFormData] = useState({
     name: '',
@@ -35,6 +37,7 @@ const [commentFormData, setCommentFormData] = useState({
     };
     // You can add logic to update the comments array or send data to a backend here
     console.log('New Comment:', newComment);
+    setCommentlist(prev=>[...prev, newComment])
     // Clear the form
     setCommentFormData({
       name: '',
@@ -77,7 +80,7 @@ const [commentFormData, setCommentFormData] = useState({
       {/* Render comments */}
       <div className="mb-4">
         <h2 className="text-lg font-semibold mb-2 mt-10">Comments</h2>
-        {comments.map((comment, index) => (
+        {commentlist?.map((comment, index) => (
           <div key={index} className="border p-4 mb-2">
             <p className="font-semibold">{comment.author}</p>
             <p>{comment.text}</p>

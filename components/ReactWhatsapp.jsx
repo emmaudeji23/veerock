@@ -2,11 +2,12 @@
 
 import WhatsAppWidget from "react-whatsapp-chat-widget";
 import "react-whatsapp-chat-widget/index.css";
+import { contactlinks } from "../data/contactlinks";
 
 const ReactWhatsapp = () => {
     return (
         <WhatsAppWidget
-            phoneNo="2348032787601"
+            phoneNo={contactlinks?.phonenumber}
             position="right"
             widgetWidth="250px"
             widgetWidthMobile="260px"
@@ -14,7 +15,7 @@ const ReactWhatsapp = () => {
             autoOpenTimer={5000}
             messageBox={true}
             messageBoxTxt=""
-            iconSize="35"
+            iconSize="60"
             iconColor="white"
             iconBgColor="green"
             headerIcon="/favicon.png"

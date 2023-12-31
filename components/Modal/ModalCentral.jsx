@@ -4,6 +4,7 @@ import Policy from "@/lib/Policy";
 import Terms from "@/lib/Terms";
 import QuoteModal from "./QuoteModal";
 import ProjectDetails from "./ProjectDetails";
+import VisionMision from "@/lib/VisionAndMission";
 
 
 const ModalCentral = ({ children, }) => {
@@ -23,6 +24,7 @@ const ModalCentral = ({ children, }) => {
               <>
                { modalType === 'policy' && <Policy/>}
                { modalType === 'ceo' && <CeoLetter/>}
+               { modalType === 'vision' && <VisionMision/>}
                { modalType === 'terms' && <Terms/>}
                {modalType === 'quote' && <QuoteModal onClose={closeModal}/>}
               </>

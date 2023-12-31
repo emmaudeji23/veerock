@@ -29,15 +29,15 @@ const AboutSection = ({content}) => {
             </div>
 
             <div className="flex gap-6">
-               <Button variant={'primary'} link={'/contact'}>Contact us</Button>
                <Button variant={'secondary'} link={'/about'}>Learn more</Button>
             </div>
         </div>
 
         <ImageCard 
             imgUrl={content.imgUrl}
-            component={<h3 className='text-xl flex items-end gap-3 pb-3 font-semibold  justify-end'>
-               <p className="text-5xl font-bold text-zinc-400 "><FaQuoteLeft/></p> <p> Experienced Engineers & Partners </p>
+            component={<h3 className='text-xl flex items-end gap-3 pb-3 font-semibold  justify-end text-zinc-400 '>
+               {/* <p className="text-5xl font-bold "><FaQuoteLeft/></p>  */}
+               <p> Experienced Engineers & Partners </p>
             </h3 >}
         />
 

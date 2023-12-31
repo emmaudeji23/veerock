@@ -11,7 +11,7 @@ export const blogPage = () => {
     blogs: [
         {
           title: "5 Sustainable Construction Practices for a Greener Future",
-          imageUrl: "/woman-eng-happy-ipad.jpg",
+          imageUrl: "/veerock/construction4.jpeg",
           category: "Construction",
           slug: "sustainable-construction-practices",
           introduction: "Discover how sustainable practices are reshaping the construction industry.",
@@ -45,6 +45,51 @@ export const blogPage = () => {
             }
           ]
         },
+        {
+          title: "Unlock the Magic: Complete House Renovating Services",
+          imageUrl: "/veerock/palace4.jpeg",
+          category: "Construction",
+          slug: "complete-house-renovating-services",
+          introduction: "The magic of turning houses into personalized dream residences that encapsulate your aspirations.",
+        
+          sections: [
+            {
+              subheading: "A Personalized Approach",
+              content: "Our renovating services go beyond the ordinary. We believe that your home should be a reflection of your personality and lifestyle. That's why we take a personalized approach to understand your unique vision and preferences. Our expert team works closely with you to create a home that is not just a living space but a true extension of your identity. From choosing the color palette to selecting the finest details, we ensure every element speaks to your individual style."
+            },
+            {
+              subheading: "Transformative Design Solutions",
+              content: "Prepare to witness the magic of transformative design. Our experienced team of designers and architects is dedicated to revitalizing your living spaces. We understand that a home should not only be visually appealing but also functional. Our design solutions are crafted to seamlessly blend aesthetics and practicality. Whether it's reimagining your kitchen layout for better functionality or creating a cozy corner for relaxation, we bring your dreams to life through transformative design."
+            },
+            {
+              subheading: "Quality Craftsmanship",
+              content: "At Veerock, we believe in the enduring beauty of quality craftsmanship. Our skilled craftsmen bring years of experience to every project, ensuring meticulous attention to detail. We source premium materials to guarantee the longevity and durability of every element in your home. From the foundation to the finishing touches, our commitment to quality ensures that your renovated home not only looks stunning but withstands the test of time."
+            },
+            {
+              subheading: "Efficient Project Management",
+              content: "We understand that a smooth and efficient renovation process is essential for a stress-free experience. Our dedicated project management team ensures that every aspect of your renovation is handled with precision and care. We provide clear timelines and milestones, allowing you to plan and enjoy your newly renovated home without unnecessary delays. Our commitment to efficient project management is aimed at making the renovation journey as enjoyable and seamless as possible."
+            }
+          ],
+          
+          conclusion: "Transform your house into the home of your dreams with Veerock's complete renovating services. Our personalized approach, transformative design solutions, quality craftsmanship, and efficient project management are the pillars that redefine the way you experience your home. Discover the perfect blend of style, comfort, and functionality with Veerock.",
+          
+          cta: "Ready to start your renovation journey? Contact us to explore how we can turn your vision into reality. Let's unlock the magic together.",
+          
+          author: "Jane Doe",
+          date: "2023-09-20",
+          likes: 45,
+          
+          comments: [
+            {
+              author: "John Smith",
+              text: "I'm impressed by the personalized approach! Can't wait to start renovating my home with your services."
+            },
+            {
+              author: "Emily Johnson",
+              text: "The transformative design solutions mentioned here are exactly what I've been looking for. Excited to see the results!"
+            }
+          ]
+        },        
         {
           title: "Creating Time-Saving Interior Designs with Smart Tech",
           imageUrl: "/veerock/mural-wall.jpeg",

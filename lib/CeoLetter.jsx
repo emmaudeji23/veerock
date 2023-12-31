@@ -1,51 +1,79 @@
 import { useGlobalState } from "@/context/GlobalStateContext"
-import { FaRegTimesCircle } from "react-icons/fa"
+import { contactlinks } from "@/data/contactlinks";
+import { FaPhoneAlt, FaRegTimesCircle } from "react-icons/fa"
 
 const CeoLetter = () => {
   const {closeModal} = useGlobalState()
-  return (
-   
-<div className="p-6 py-12 bg-light100 max-w-6xl overflow-auto h-screen relative">
+
+    return (
+      <div className="bg-gray-100 relative">
+
+        <div className="p-6 py-16 bg-light100 max-w-6xl overflow-auto h-screen relative">
+
+        <div className="flex justify-between gap-6 w-full">
+          <h1 className="text-3xl font-bold mb-4">Our commitment to you</h1>
+          <button onClick={closeModal} className="text-xl hover:shadow-lg duration-300 "><FaRegTimesCircle /></button>
+        </div>
   
-  <div className="flex justify-between gap-6 w-full">
-    <h1 className="text-3xl font-bold mb-4">Our Promise to You</h1>
-    <button onClick={closeModal} className="text-xl hover:shadow-lg duration-300 "><FaRegTimesCircle /></button>
-  </div>
-
-    
-    <p className="mb-2"><em>Effective Date: August 4th, 2023</em></p>
-    <p className="mb-4">Welcome to Veerock Construction Company ("we," "us," or "our"). By accessing or using our website <a href="https://www.veerock.com" className="text-blue-500">www.veerock.com</a> (the "Site"), you agree to be bound by these Terms of Service.</p>
-
-    <h2 className="text-xl font-bold mb-2">Services:</h2>
-    <p className="mb-4">Veerock Construction Company offers a range of services, including architectural design, construction, building technology, interior designs, maintenance, procurements, project management, and consultation.</p>
-
-    <h2 className="text-xl font-bold mb-2">Use of Our Site:</h2>
-    <p className="mb-4">You may use our Site for informational purposes and to learn more about our services. However, you may not use the Site for any unlawful or unauthorized purpose.</p>
-
-    <h2 className="text-xl font-bold mb-2">Intellectual Property:</h2>
-    <p className="mb-4">All content, materials, and designs on the Site are the property of Veerock Construction Company and protected by applicable intellectual property laws. You may not reproduce, distribute, modify, or create derivative works of any content on the Site without our prior written consent.</p>
-
-    <h2 className="text-xl font-bold mb-2">Smart and Sustainable Technology:</h2>
-    <p className="mb-4">At Veerock Construction Company, we are committed to using modern and sustainable technologies in our projects. We strive to create environmentally-friendly and energy-efficient buildings and adhere to green construction practices.</p>
-
-    <h2 className="text-xl font-bold mb-2">Budget-Friendly and Time-Conservation:</h2>
-    <p className="mb-4">We value cost-effectiveness and time-efficiency in our project execution. Our aim is to deliver high-quality results within budget and specified timelines.</p>
-
-    <h2 className="text-xl font-bold mb-2">Disclaimer:</h2>
-    <p className="mb-4">The information provided on our Site is for general informational purposes only. While we strive to keep the information accurate and up-to-date, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information.</p>
-
-    <h2 className="text-xl font-bold mb-2">Limitation of Liability:</h2>
-    <p className="mb-4">In no event shall Veerock Construction Company, its directors, officers, employees, or agents be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in any way connected with your use of the Site or our services.</p>
-
-    <h2 className="text-xl font-bold mb-2">Governing Law:</h2>
-    <p className="mb-4">These Terms of Service shall be governed and construed in accordance with the laws of Nigeria, without regard to its conflict of law provisions.</p>
-
-    <h2 className="text-xl font-bold mb-2">Changes to the Terms:</h2>
-    <p className="mb-4">We reserve the right, at our sole discretion, to modify or replace these Terms at any time. The effective date of the revised Terms will be posted on this page. Your continued use of the Site after any such changes will constitute your acceptance of the updated Terms.</p>
-
-
-    </div>
-  )
-}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Your Dreams, Our Priority */}
+            <div className="p-4">
+              <h3 className="text-xl font-semibold mb-4">Your Dreams, Our Priority</h3>
+              <p>Your dreams and aspirations are at the core of everything we do. We are committed to turning those dreams into reality.</p>
+            </div>
+  
+            {/* Unparalleled Craftsmanship */}
+            <div className="p-4">
+              <h3 className="text-xl font-semibold mb-4">Unparalleled Craftsmanship</h3>
+              <p>Our team of experts brings precision and innovation to every project, ensuring enduring structures that reflect unparalleled craftsmanship.</p>
+            </div>
+  
+            {/* Your Property, Our Care */}
+            <div className="p-4">
+              <h3 className="text-xl font-semibold mb-4">Your Property, Our Care</h3>
+              <p>We treat your property as if it were our own. Meticulous care is taken in selecting services and materials to ensure quality and longevity.</p>
+            </div>
+  
+            {/* Beyond Construction */}
+            <div className="p-4">
+              <h3 className="text-xl font-semibold mb-4">Beyond Construction</h3>
+              <p>We are more than just a construction company. We symbolize trust, reliability, and versatility, extending our expertise to various areas including real estate development and cutting-edge solutions.</p>
+            </div>
+  
+            {/* Sustainable Practices and Smart Technology */}
+            <div className="p-4">
+              <h3 className="text-xl font-semibold mb-4">Sustainable Practices and Smart Technology</h3>
+              <p>Our commitment to sustainability and smart technology empowers us to deliver high-quality projects, reduce costs, and save time.</p>
+            </div>
+  
+            {/* Client-Centric Approach */}
+            <div className="p-4">
+              <h3 className="text-xl font-semibold mb-4">Client-Centric Approach</h3>
+              <p>Your satisfaction is our top priority. Our client-centric approach ensures that your visions drive every decision we make.</p>
+            </div>
+  
+            {/* Quality on a Budget */}
+            <div className="p-4">
+              <h3 className="text-xl font-semibold mb-4">Quality on a Budget</h3>
+              <p>Maintaining high standards does not mean breaking the bank. Our commitment to quality extends to cost-efficiency, ensuring your project meets the highest standards without exceeding your budget.</p>
+            </div>
+  
+            {/* Time is of the Essence */}
+            <div className="p-4">
+              <h3 className="text-xl font-semibold mb-4">Time is of the Essence</h3>
+              <p>We value your time, and our streamlined processes, coupled with smart technology, enable us to deliver projects within timelines that suit your needs.</p>
+            </div>
+          </div>
+  
+          {/* In Conclusion */}
+          <div className="text-center mt-8">
+            <p className="text-lg">
+              At Veerock Construction Copany, we are not just in the business of construction and development; we are in the business of bringing dreams to life. Discover the possibilities with us. Let's build your future together!
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
 export default CeoLetter

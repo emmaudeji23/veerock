@@ -6,9 +6,12 @@ import { useGlobalState } from '@/context/GlobalStateContext'
 import { homepageData } from '@/data/homepageData'
 import { FaRegTimesCircle } from 'react-icons/fa'
 import Button from '../Buttons/Button'
+import Loading from '../Loader/Loading'
+import BtnLoading from '../Loader/BtnLoading'
 
 const QuoteModal = ({  isOpen, onClose }) => {
   const {projectsPortfolio} = homepageData()
+  const [loading, setLoading] = useState(0)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -29,7 +32,12 @@ const QuoteModal = ({  isOpen, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(1)
     // Implement your form submission logic here
+    setTimeout(() => {
+      onClose()
+      setLoading(0)
+    }, 3000);
     console.log('Form Data:', formData);
   };
 
@@ -39,11 +47,11 @@ const QuoteModal = ({  isOpen, onClose }) => {
   return (
     // <div className={`${isOpen ? ' scale-100' : 'scale-0'} fixed transform transition-transform duration-500 inset-0 z-50 flex items-center bg-black bg-opacity-70`} onClick={onClose}>
 
-      <div onClick={e=>e.stopPropagation()} className="relative mx-auto max-w-[500px]  h-full overflow-y-auto bg-light200 px-4 py-8 ">
+      <div onClick={e=>e.stopPropagation()} className="relative mx-auto w-80 sm:w-[500px]  h-full overflow-y-auto bg-light200 px-4 py-8 rounded-md">
       <FaRegTimesCircle size={20} onClick={onClose} className='absolute top-4 right-4'/>
 
-      <h2 className="text-2xl font-semibold mb-4">Request a Quote</h2>
-      <form className='' onSubmit={handleSubmit}>
+      <h2 className="text-2xl font-semibold mb-4 w-full">Request a Quote</h2>
+      <form className='w-full' onSubmit={handleSubmit}>
 
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-600">Name</label>
@@ -127,9 +135,10 @@ const QuoteModal = ({  isOpen, onClose }) => {
         <div className="flex justify-center">
           <button variant={'primary'} link={'#'}
             type="submit"
-            className="hover-blue rounded py-3 px-5"
+            className="hover-blue rounded py-3 px-5 flex items-center justify-center gap-2"
           >
-            Submit Quote Request
+            {loading ? <BtnLoading/> : null}
+            <p>Submit Quote Request</p>
           </button >
         </div>
       </form>

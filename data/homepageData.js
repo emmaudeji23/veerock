@@ -1,5 +1,6 @@
-import { FaBuilding, FaDraftingCompass, FaCity, FaColumns, FaRecycle, FaWifi, FaHome, FaCouch, FaTools, FaHammer, FaLeaf,  FaLightbulb  } from 'react-icons/fa';
+import { FaBuilding, FaDraftingCompass, FaCity, FaColumns, FaRecycle, FaWifi, FaHome, FaCouch, FaTools, FaHammer, FaLeaf,  FaLightbulb, FaTree  } from 'react-icons/fa';
 import { AiOutlineClockCircle } from 'react-icons/ai';
+import { contactlinks } from './contactlinks';
 
 export const homepageData = () => {
     const headline = [
@@ -8,34 +9,34 @@ export const homepageData = () => {
             description: "We Build Your Dream With Passion",
             image: '/man-woman-engineer-pointing.jpg',
             button2Text: 'All Projects',
-            button1Text: 'Contact Us',   
+            button1Text: '',   
             link2: '/projects',
-            link1: '/contact'
+            link1: `tel:${contactlinks?.phonenumber}`
         },
         {
             heading: 'SMART TECHNOLOGY ON LOW BUDGET',
             description: "Contact Us For Your Building Projects",
             button2Text: '',
-            button1Text: 'Contact Us',
+            button1Text: '',
             image: '/engineer-man-office.jpg',
             link2: '#',
-            link1: '/contact'
+            link1: `tel:${contactlinks?.phonenumber}`
         },
         {
             heading: 'UNMATCHED CREDIBLITY AND EXCELLENCE',
             description: "Trust Us To Streamline Your Bogus Project",
-            button1Text: 'Contact Us',
+            button1Text: '',
             image: '/man-woman-engineer-explaing.jpg',
             button2Text: 'Learn More',
             link2: '/about',
-            link1: '/contact'
+            link1:  `tel:${contactlinks?.phonenumber}`
         }
     ]
 
     const credibility = [
         {
-            heading: "We Take Pride in Our Craft, Delivering Quality. Building a Better Tomorrow.",
-            description: "From towering architectural marvels to intricate interior designs, each endeavor is meticulously executed, showcasing our dedication to impeccable craftsmanship.",
+            heading: "Transforming Dreams into Enduring Structures: Our Mission at Veerock",
+            description: "Every project is a testament to our dedication to turning your dreams into tangible, lasting realities. Join us on a journey where innovation meets craftsmanship, and client satisfaction is our ultimate measure of success.",
             imgUrl: `/man-engineer-with-paper.jpg`,
             imgAlt: `credibility`
             
@@ -51,13 +52,13 @@ export const homepageData = () => {
                 icon: <FaHome/>,
                 heading: " Real Estate Today",
                 description: "Where innovation meets comfort and timeless value, ",
-            slug: "future-of-real-estate-innovation",
+              slug: "future-of-real-estate-innovation",
 
             },
             {
                 icon: <AiOutlineClockCircle/>,
-                heading: "Redefining Efficiency",
-                description: "We save you time and budget without any compromise",
+                heading: "Budget Friendly",
+                description: "We save you time and cost without any compromising standard",
                 slug: "redefining-efficiency-time-budget",
 
             },
@@ -74,9 +75,9 @@ export const homepageData = () => {
     const aboutSection = {
         title: 'ABOUT US',
         heading: 'We Save You Time And Budget',
-        description: "Revolutionizing construction services with sustainable innovation at a low cost without compromizing efficiency. Our key strength sets us apart",
+        description: "Revolutionizing construction services with sustainable innovation at a low cost without compromizing standard. Our key strength sets us apart",
         strength: [ "Innovative Technolgy", 
-        "Holistic Lifestyle Integration", "Sustainability Champions", "Experienced Team And Partners", "Quality Project Management", "Cost-Effective Delivery",            
+        "Holistic Lifestyle Integration",  "Experienced Team And Partners", "Quality Project Management", "Cost-Effective Delivery",            
         ],
         imgUrl: `/woman-engineer.jpg`
     }
@@ -146,6 +147,12 @@ export const homepageData = () => {
               description: "Transforming spaces into personalized urban havens.",
               icon: <FaCouch />,
               link: '/services/#interior'
+            },
+            {
+              title: "Exterior Designs",
+              description: "Elevating outdoor spaces through meticulous landscape architectural design.",
+              icon: <FaTree />,
+              link: '/services/#exterior-design'
             },
             {
               title: "Waste-to-Energy Solutions",

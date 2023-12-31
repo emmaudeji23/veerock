@@ -17,9 +17,10 @@ const Services = () => {
       </div>
 
         {
-          list.slice(0,3)?.map(({heading, subheading,description1, description2, ctaText, btnText, btnUrl,imgurl}, i)=> (
+          list.slice(0,3)?.map(({heading, subheading,description1,id, description2, ctaText, btnText, btnUrl,imgurl}, i)=> (
             <ServicesLayout
             key={i}
+            id={id}
             heading={heading}
             subheading={subheading}
             description1={description1}
@@ -39,9 +40,10 @@ const Services = () => {
         </div>
 
         {
-          list.slice(3)?.map(({heading, subheading,description1, description2, ctaText, btnText, btnUrl, imgurl}, i)=> (
+          list.slice(3)?.map(({heading, subheading,description1,id, description2, ctaText, btnText, btnUrl, imgurl}, i)=> (
             <ServicesLayout
             key={i}
+            id={id}
             heading={heading}
             subheading={subheading}
             description1={description1}

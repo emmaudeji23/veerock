@@ -55,10 +55,10 @@ const Footer = () => {
                 <a href={`mailto:${contactlinks?.email}`}className='flex gap-4 items-center'>
                   <FaRegEnvelope/> {contactlinks?.email}
                 </a>
-                <a href="tel:+2348032787601" className="flex gap-4 items-center" > 
+                <a href={`tel:${contactlinks?.phonenumber}  `} className="flex gap-4 items-center" > 
                   <FaPhoneAlt/> {contactlinks?.phonenumber}
                 </a>
-                <a href="tel:+13467449259" className="flex gap-4 items-center" > 
+                <a href={`tel:${contactlinks?.phonenumber2}  `} className="flex gap-4 items-center" > 
                   <FaPhoneAlt/> {contactlinks?.phonenumber2}
                 </a>
               </ul>

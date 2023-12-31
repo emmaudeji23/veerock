@@ -16,7 +16,7 @@ const AdvertSection = ({ content }) => {
         <h1 className="text-3xl sm:text-6xl font-semibold mb-4">{content.heading}</h1>
         <p className="text-lg mb-8">{content.description}</p>
         <div className="flex space-x-4">
-          <Button variant={'primary'} link={'/blogs/slug'} >
+          <Button variant={'primary'} link={'/blogs/construction/complete-house-renovating-services'} >
             <div className="flex gap-3 w-full items-center">
             <p>Learn More</p> <FaLongArrowAltRight size={20}/>
             </div>

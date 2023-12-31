@@ -2,9 +2,9 @@ import React from 'react'
 import Button from '../Buttons/Button'
 import ImageCard from '../Cards/ImageCard'
 
-const ServicesLayout = ({heading, subheading, description1, description2,  cta, btnText, btnlink, imgurl, }) => {
+const ServicesLayout = ({heading, subheading, description1, description2, id, cta, btnText, btnlink, imgurl, }) => {
   return (
-    <section className='section-padding py-20'>
+    <section id={id} className='section-padding py-20'>
         <h3 className="text-3xl font-semibold pb-10">
             {heading}
         </h3>
