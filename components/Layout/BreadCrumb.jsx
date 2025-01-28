@@ -30,7 +30,7 @@ const Breadcrumb = () => {
       {breadcrumb.map((item, index) => (
         <div key={item.id} className="text-sm md:text-lg z-10 text-white">
           {index !== 0 && <span className="mx-1">{`>`}</span>}
-          <span className='capitalize'>{item.label}</span>
+          <span className='capitalize'>{decodeURIComponent(item.label)}</span>
         </div>
       ))}
     </div>

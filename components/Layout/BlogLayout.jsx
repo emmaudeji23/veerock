@@ -36,7 +36,7 @@ const BlogLayout = ({ children }) => {
             
             <ul  className="flex lg:flex-col lg:gap-4 gap-1 w-full p-4 lg:w-80 ">
             {allCategories.map((category, index) => (
-                <Link href={`/blogs/${category}`} key={index} className="bg-light300 hover:ring hover:ring-yellow-500 duration-300 flex-shrink-0 p-4">
+                <Link href={`/blogs/${encodeURI(category)}`} key={index} scroll={false} className="bg-light300 hover:ring hover:ring-yellow-500 duration-300 flex-shrink-0 p-4">
                     {category}
                 </Link>
             ))}

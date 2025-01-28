@@ -17,7 +17,7 @@ const BlogList = ({filteredBlogs}) => {
     const paginatedBlogs = currentItems(filteredBlogs?.blogs);
 
   return (
-    <div>
+    <div className="min-h-screen">
       <div className="">
         {/* {!filteredBlogs.category && <p className="text-red-400 pb-2" >Category does not exist</p>} */}
       <h1 className="text-2xl font-semibold mb-4">
