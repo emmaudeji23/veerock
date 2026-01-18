@@ -7,7 +7,7 @@ export const homepageData = () => {
         {
             heading: 'SUSTAINABLE AND INNOVATIVE CONSTRUCTION',
             description: "We Build Your Dream With Passion",
-            image: '/man-woman-engineer-pointing.jpg',
+            image: '/man-woman-engineer-pointing.png',
             button2Text: 'All Projects',
             button1Text: '',   
             link2: '/projects',
@@ -18,7 +18,7 @@ export const homepageData = () => {
             description: "Contact Us For Your Building Projects",
             button2Text: '',
             button1Text: '',
-            image: '/engineer-man-office.jpg',
+            image: '/engineer-man-office.png',
             link2: '#',
             link1: `tel:${contactlinks?.phonenumber}`
         },
@@ -26,7 +26,7 @@ export const homepageData = () => {
             heading: 'UNMATCHED CREDIBLITY AND EXCELLENCE',
             description: "Trust Us To Streamline Your Bogus Project",
             button1Text: '',
-            image: '/man-woman-engineer-explaing.jpg',
+            image: '/man-woman-engineer-explaing.png',
             button2Text: 'Learn More',
             link2: '/about',
             link1:  `tel:${contactlinks?.phonenumber}`

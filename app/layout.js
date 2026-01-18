@@ -11,7 +11,7 @@ import ReactWhatsapp from '@/components/ReactWhatsapp'
 export const metadata = {
   title: 'Veerock Construction Company',
   description: description,
-  ogImage: `${url?.vercel}/veerock/worker2.jpeg`,
+  // ogImage: `${url?.vercel}/veerock/worker2.jpeg`,
   keyword:`Real Estate, Construction, Building, Waste Management, Rent, Sales, Renewable Energy, Housing, Estate Developement, Property search, Energy, Mining, Manufacturing`
 }
 
