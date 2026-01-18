@@ -8,11 +8,74 @@ import ReactWhatsapp from '@/components/ReactWhatsapp'
 
 // const poppins = Poppins({ subsets: ['latin'] })
 
+
 export const metadata = {
-  title: 'Veerock Construction Company',
-  description: description,
-  // ogImage: `${url?.vercel}/veerock/worker2.jpeg`,
-  keyword:`Real Estate, Construction, Building, Waste Management, Rent, Sales, Renewable Energy, Housing, Estate Developement, Property search, Energy, Mining, Manufacturing`
+  metadataBase: 'https://veerockconcept.com', // e.g. https://veerockconcept.com
+
+  title: {
+    default: 'Veerock Construction Company',
+    template: '%s | Veerock Construction Company',
+  },
+
+  description,
+
+  keywords: [
+    'Construction Company',
+    'Building Construction',
+    'Real Estate Development',
+    'Property Development',
+    'Estate Development',
+    'Residential Construction',
+    'Commercial Construction',
+    'Waste Management',
+    'Renewable Energy',
+    'Housing Projects',
+    'Mining',
+    'Manufacturing',
+    'Nigeria Construction Company',
+  ],
+
+  authors: [{ name: 'Veerock Construction Company' }],
+  creator: 'Veerock Construction Company',
+  publisher: 'Veerock Construction Company',
+
+  openGraph: {
+    type: 'website',
+    locale: 'en_NG',
+    url: url.website,
+    siteName: 'Veerock Construction Company',
+    title: 'Veerock Construction Company',
+    description,
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Veerock Construction Company – Building the Future',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Veerock Construction Company',
+    description,
+    images: ['/opengraph-image.png'],
+  },
+
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 }
 
 export default function RootLayout({ children }) {
